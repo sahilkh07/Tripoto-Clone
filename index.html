@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tripto</title>
+    <style>
+        body {
+            font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+        }
+
+        #main {
+            width: 100%;
+            height: 400px;
+            border: 1px solid red;
+            background-image: url("https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg");
+        }
+
+        #navbar {
+            color: #fff;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            font-family: inherit;
+            position: fixed;
+
+
+
+        }
+
+        #navbar>div:nth-child(1) {
+            margin-right: 650px;
+
+        }
+
+        #main>h1 {
+            color: white;
+            margin-top: 100px;
+
+            text-align: center !important;
+            font-weight: bold;
+        }
+
+        input {
+            width: 480px;
+            height: 50px;
+            margin-left: 470px;
+            border-radius: 10px;
+
+        }
+
+        .smallDiv {
+            /* display: flex; */
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 30px;
+            height: 200px;
+            justify-content: space-around;
+            width: 95%;
+        }
+
+        .smallDiv>div {
+
+            /* border: 1px solid red; */
+            height: 100px;
+            width: 300px;
+            margin-top: 50px;
+        }
+
+        .smallDiv>div>img {
+            width: 100%;
+        }
+
+        .moving {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 350px;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            text-transform: capitalize;
+            font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+            position: relative;
+
+        }
+
+
+
+        .moving>div>img {
+            width: 100%;
+            height: 50%;
+            border-radius: 5px;
+
+
+        }
+
+        .moving>div>h3 {
+            font-size: 20px;
+        }
+
+        .btn_left_class {
+            position: absolute;
+            top: 20%;
+            left: -1%;
+            border-radius: 17px;
+            padding: 8px;
+            border: none;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .btn_right_class {
+            position: absolute;
+            top: 20%;
+            left: 99%;
+            border-radius: 50px;
+            padding: 9px;
+            border: none;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #road {
+            width: 80%;
+            height: 400px;
+            margin: auto;
+        }
+
+        #road>img {
+            width: 100%;
+
+            margin-top: 50px;
+
+        }
+
+        #august>div>img+h3+p+p {
+            color: blue;
+            margin-top: -35px;
+            margin-left: 40px;
+        }
+
+        #International>div>img+h3+p+p {
+            color: blue;
+            margin-top: -35px;
+            margin-left: 40px;
+        }
+
+        #august+h1 {
+            margin-left: 140px;
+            margin-top: 20px;
+
+        }
+
+        #type>div>img+h4+h3+p+p {
+            color: blue;
+            margin-top: -35px;
+            margin-left: 40px;
+        }
+
+        .smallDiv+h1 {
+            margin-left: 140px;
+
+        }
+
+        #Tripoto {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 500px;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            /* font-family: HelveticaNeue",Helvetica,Arial,sans-serif; */
+            font-family: -apple-system, helvetica, arial, sans-serif
+        }
+
+        #Tripoto>div {
+            border-bottom: 1px solid red;
+
+
+
+        }
+
+        #Tripoto>div>img {
+            width: 100%;
+            border-radius: 5px;
+
+        }
+
+        #Tripoto>div>img+h4 {
+            text-transform: uppercase;
+            color: #359391;
+            font-size: 15px;
+
+
+        }
+
+        #Tripoto>div>img:nth-child(4) {
+            width: 4%;
+        }
+
+        #Tripoto>div>h4:nth-child(5) {
+            margin-top: -20px;
+            margin-left: 30px;
+            font-size: 15px;
+            color: #359391
+        }
+
+        #Tripoto>div>p:nth-child(7) {
+            margin-top: -34px;
+            margin-left: 55px;
+            font-size: 15px;
+            color: #359391
+        }
+
+        #Tripoto>div>button:nth-child(9) {
+
+
+            margin-left: 30px;
+
+        }
+
+        #Tripoto>div>button:nth-child(8) {
+            /* margin-bottom: 30px; */
+
+
+            margin-left: 250px;
+
+        }
+
+        #partners {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px;
+            gap: 40px;
+            width: 80%;
+            margin: auto;
+            margin-top: 10px;
+
+        }
+
+        #partners>div>img {
+            width: 10%;
+            border-radius: 50px;
+        }
+
+        #partners>div>img+p {
+            margin-top: -30px;
+            margin-left: 50px;
+        }
+
+        #Budget {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 400px;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            /* font-family: HelveticaNeue",Helvetica,Arial,sans-serif; */
+            font-family: -apple-system, helvetica, arial, sans-serif
+        }
+
+        #Budget>div {
+            border-bottom: 1px solid red;
+
+
+
+
+
+        }
+
+        #Budget>div>img {
+            width: 100%;
+            border-radius: 5px;
+
+        }
+
+        #Budget>div>img+h4 {
+            text-transform: uppercase;
+            color: #359391;
+            font-size: 15px;
+        }
+
+        #Budget>div>img:nth-child(4) {
+            width: 4%;
+        }
+
+        #Budget>div>h4:nth-child(5) {
+            margin-top: -20px;
+            margin-left: 30px;
+            font-size: 15px;
+        }
+
+        #Budget>div>p:nth-child(7) {
+            margin-top: -34px;
+            margin-left: 70px;
+            font-size: 15px;
+            color: #359391
+        }
+
+        #Budget>div>button:nth-child(8) {
+            /* margin-bottom: 30px; */
+
+            padding: 5px;
+            margin-left: 180px;
+            margin-top: 20px;
+
+        }
+
+        #partnersfor {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px;
+            gap: 40px;
+            width: 80%;
+            margin: auto;
+            margin-top: 10px;
+
+        }
+
+        #partnersfor>div>img {
+            width: 10%;
+            border-radius: 50px;
+        }
+
+        #partnersfor>div>img+p {
+            margin-top: -30px;
+            margin-left: 50px;
+        }
+
+
+        #partnersfor+h1 {
+            margin-left: 140px;
+            font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+        }
+
+        #partnersfor+h1+p {
+            margin-left: 140px;
+            margin-right: 70px;
+            font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+        }
+
+        #womens {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 500px;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        #womens>div>img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        #Trip {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 400px;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+
+        }
+
+
+
+        #Trip>div>img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+
+        #Vlogs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 400px;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+
+        }
+
+
+        #Vlogs>div>img {
+            width: 100%;
+            height: 60%;
+            border-radius: 8px;
+        }
+
+        #Vlogs>div>img+h3+p+p {
+            color: blue;
+            margin-top: -35px;
+            margin-left: 35px;
+        }
+
+        .heading {
+            margin-left: 140px;
+        }
+
+        #womens+h1 {
+            margin-top: 60px;
+        }
+
+        #moving_id>div>h4 {
+            color: #f63;
+        }
+
+        #serach_id {
+            background-image: url('searchicon.png');
+            box-sizing: border-box;
+
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 45px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="mainn"></div>
+        <h1 class="topheading">India's Largest Community of Travellers</h1>
+        <input type="search" id="serach_id">
+    </div>
+    <div class="smallDiv">
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png" alt="">
+
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192307_cc.png" alt="">
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192273_bb.png" alt="">
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192344_dd.png" alt="">
+        </div>
+    </div>
+    <h1>In the Spotlight: Partnerships</h1>
+    <div id="moving_id" class="moving">
+        <div>
+            <img class="crauser1"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660817736_078_commonarea_07_min.jpg"
+                alt="">
+            <h4 id="h41">goSTOPS</h4>
+            <h3 id="h31">Experience the Best of Monsoon With These Trendy goSTOPS Stays Under Rs 2,000</h3>
+        </div>
+        <div>
+            <img class="crauser2"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659608221_d0f7de4a_b1d9_40e0_bba0_d0527a824e78.jpg"
+                alt="">
+            <h4 id="h42">singapore tourism board</h4>
+            <h3 id="h32">The Panchi Befikra Contest Is Live and Here's Why You Should Participate!</h3>
+        </div>
+        <div>
+            <img class="crauser3"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660808085_shutterstock_1611239635_min.jpg"
+                alt="">
+            <h4 id="h43">saudi tourism authority</h4>
+            <h3 id="h33">This Quiz on Saudi Will Help You Design Your Best Adventure!</h3>
+        </div>
+        <div>
+            <img class="crauser4" src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660310642_j_1.jpg"
+                alt="">
+            <h4 id="h44">Niyo Global</h4>
+            <h3 id="h34">India's Top Travel Influencers Share Their Best Secrets for Budget International Trips!</h3>
+        </div>
+        <button id="btn_left" class="btn_left_class">
+            < </button>
+                <button id="btn_right" class="btn_right_class">></button>
+
+
+
+    </div>
+
+    <div id="road">
+        <img src="https://cdn1.tripoto.com/media/transfer/img/2224454/Image/1656479622_header_web2.gif" alt="">
+    </div>
+
+    <h1 class="heading">Find Best Places to Visit in India in August & September
+    </h1>
+    <div id="august" class="moving">
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658862164_1455274435_udaipur3_jpg.jpg"
+                alt="">
+            <h3 style="margin-bottom:40px;">Tripoto's Destination of The Month: Udaipur</h3>
+            <p>by</p>
+            <p>Tripoto</p>
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1659027857_1658481747_depositphotos_95512066_stock_illustration_incredible_india_background.jpeg"
+                alt="">
+            <h3 style="margin-bottom:40px;">Cheapest Domestic Flights for Aug & Sept 2022</h3>
+            <p>by</p>
+            <p>Tanisha Mundra</p>
+
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658862269_1467796889_1467796887893_5_2.jpg"
+                alt="">
+            <h3 style="margin-bottom:40px;">Here Are The Best Places to Visit in August in India</h3>
+            <p>by</p>
+            <p>Disha Kapkoti</p>
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863582_1657213046_satyan_chawla_pti5yh3a4l8_unsplash.jpg"
+                alt="">
+            <h3>Trips Under 10K INR That You Need to Bookmark for August</h3>
+            <p>by</p>
+            <p>Shruti Singh</p>
+        </div>
+        <button id="btn_left" class="btn_left_class">
+            < </button>
+                <button id="btn_right" class="btn_right_class">></button>
+
+
+
+    </div>
+
+
+    <h1 class="heading">Plan International Trips for August & September
+    </h1>
+    <div id="International" class="moving">
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658864126_1657780099_cover1.jpg"
+                alt="">
+            <h3>All You Need to Know About Thailand Visa For Indians 2022</h3>
+            <p>by</p>
+            <p>Sinchita Sinha</p>
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863969_1493707507_15798144758_5a93457ae4_o.jpg"
+                alt="">
+            <h3 style="margin-bottom:40px;">Add These Offbeat Places In Europe to Your List</h3>
+            <p>by</p>
+            <p>Sumedha Bharpilania</p>
+
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1653585757_1648645960_5.jpg" alt="">
+            <h3>Travel Solo to These SE Asian Countries Under 25K INR</h3>
+            <p>by</p>
+            <p>Riyanka Roy</p>
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1651046452_1545558276_erdap_2129568_1280.jpg"
+                alt="">
+            <h3 style="margin-bottom:40px;">You Can Travel To Serbia From India Without A Visa</h3>
+            <p>by</p>
+            <p>Ayushee Chaudhary</p>
+        </div>
+        <button id="btn_left" class="btn_left_class">
+            < </button>
+                <button id="btn_right" class="btn_right_class">></button>
+
+
+
+    </div>
+
+    <h1 class="heading">Check Out Best Hotels and Properties for Every Type of Traveller
+    </h1>
+    <div id="type" class="moving">
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658864670_1511440192_ononono.jpg"
+                alt="">
+            <h4>Budget Stays</h4>
+            <h3>These Hostels In Udaipur Are Perfect For Every Backpacker</h3>
+            <p>by</p>
+            <p>Adete Dahiya</p>
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658865127_1542805937_gc13_min.png"
+                alt="">
+            <h4>Budget Stays</h4>
+            <h3 style="margin-bottom:40px;">This Lakeside Hostel Is The Perfect Escape From Delhi</h3>
+            <p>by</p>
+            <p>Sonalika Debnath</p>
+
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656332499_1656096038_manalsu_2.jpg"
+                alt="">
+            <h4>Budget Stays</h4>
+            <h3>Ultimate List of Government Guest Houses Under 3K INR</h3>
+            <p>by</p>
+            <p>Arko Banerjee</p>
+        </div>
+        <div>
+            <img class="crauser"
+                src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658864962_1658078162_untitled_design_4.jpg"
+                alt="">
+            <h4>luxury stays</h4>
+            <h3>Mayfair, Gangtok: Find Luxury at Sikkim's Capital City</h3>
+            <p>by</p>
+            <p>Rashmi Sharma</p>
+        </div>
+        <button id="btn_left" class="btn_left_class">
+            < </button>
+                <button id="btn_right" class="btn_right_class">></button>
+
+
+
+    </div>
+    <h1 class="heading">
+        Travel and Learn with Tripoto's Mindful Retreats
+    </h1>
+    <div id="Tripoto">
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
+            <h4>package</h4>
+            <h3>Learn Sketching & Go on Guided Forest Walks Around the Himalayan Trails | Cosmic Geeks, Dharamkot </h3>
+            <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+            <h4>Himachal Pradesh</h4>
+            <p>₹ 8,300</p>
+            <p>/person</p>
+            <button>Book now</button>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg" alt="">
+            <h4>package</h4>
+            <h3>Explore Auroville on a Cycle and Learn the Art of Kalaripayattu | Beyond Community, Auroville </h3>
+            <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+            <h4>Auroville</h4>
+            <p>₹ 6,700</p>
+            <p>/person</p>
+            <button>Book now</button>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1638778652_image_cover_b.jpg" alt="">
+            <h4>package</h4>
+            <h3>Learn to Cook a Traditional Rajasthani Meal at a 200 Year-Old Luxury Haveli </h3>
+            <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+            <h4>Rajasthan</h4>
+            <p>₹ 3,799</p>
+            <p>/person</p>
+            <button style="margin-top:20px ;">Book now</button>
+        </div>
+
+    </div>
+    <div id="partners">
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg" alt="">
+            <p>Tripoto's Mindful Retreats</p>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg" alt="">
+            <p>Tripoto's Mindful Retreats</p>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg" alt="">
+            <p>Tripoto's Mindful Retreats</p>
+        </div>
+
+    </div>
+    <h1 class="heading">Book Budget Tour Packages Curated For You</h1>
+
+    <div id="Budget">
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567683210_north_east_web.jpg" alt="">
+            <h4>package</h4>
+            <h3>North East India Tour Packages </h3>
+            <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+            <h4>Northeast India</h4>
+            <p>₹ 29,000</p>
+            <p>onwards</p>
+            <button style="margin-top: -220px;">Get quotes</button>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567063251_kashmir_app.jpg" alt="">
+            <h4>package</h4>
+            <h3>Kashmir Packages </h3>
+            <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+            <h4>Kashmir</h4>
+            <p>₹ 16,000</p>
+            <p>onwards</p>
+            <button>Get quotes</button>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567083461_dubai_app.jpg" alt="">
+            <h4>package</h4>
+            <h3>Dubai Packages </h3>
+            <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+            <h4>Dubai</h4>
+            <p>₹ 28,000</p>
+            <p>onwards</p>
+            <button>Get quotes</button>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567494998_andaman_app.jpg" alt="">
+            <h4>package</h4>
+            <h3>Andaman Packages </h3>
+            <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+            <h4>Andaman</h4>
+            <p>₹ 18,000</p>
+            <p>onwards</p>
+            <button>Get quotes</button>
+        </div>
+
+    </div>
+    <div id="partnersfor">
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg" alt="">
+            <p>Tripoto's Mindful Retreats</p>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg" alt="">
+            <p>Tripoto's Mindful Retreats</p>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg" alt="">
+            <p>Tripoto's Mindful Retreats</p>
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg" alt="">
+            <p>Tripoto's Mindful Retreats</p>
+        </div>
+
+    </div>
+    <h1 class="heading">
+        In the Spotlight: Tripoto Creators of the Month - July 2022
+    </h1>
+    <p>
+        Tripoto Family is a community of travel content creators who create stunning photo blogs, engaging reels and
+        videos as well as informative articles. Here are the most promising creators of the month who took us on a
+        beautiful journey across India and the world through their content. Kudos to Tripoto's best creators for July
+        2022!
+    </p>
+    <div id="womens">
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1660286748_12.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1660290817_13.jpg" alt="">
+
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1660290935_11.jpg" alt="">
+        </div>
+    </div>
+    <h1 class="heading">Plan Your Next Trip Using Tripoto's Complete Destination Guides</h1>
+    <div id="Trip">
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt="">
+
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg" alt="">
+        </div>
+    </div>
+    <h1 class="heading">
+        Watch Tripoto's Top Travel Vlogs of the Week
+    </h1>
+    <div id="Vlogs">
+        <div>
+            <img src="https://image.mux.com/65Mxwlku9ue7VTvDW8F72z1U5VIOiEaz/thumbnail.jpg?width=600&height=600&time=2.0"
+                alt="">
+            <h3>Best Weekend Getaways From Mumbai Under 250 Kms</h3>
+            <p>By</p>
+            <p>Namita Mittal</p>
+
+        </div>
+        <div>
+            <img src="https://cdn1.tripoto.com/media/filter/tst/gen/1789711/Image/1634027797_thumbnail.jpg" alt="">
+            <h3>Best Weekend Getaways From Mumbai Under 250 Kms</h3>
+            <p>By</p>
+            <p>Namita Mittal</p>
+        </div>
+        <div>
+            <img src="https://image.mux.com/iFVXAVPcgtz02Zcmt2ExiBVFZbYw7iMhN/thumbnail.jpg?width=600&height=600&time=3.01"
+                alt="">
+            <h3>Best Weekend Getaways From Mumbai Under 250 Kms</h3>
+            <p>By</p>
+            <p>Namita Mittal</p>
+        </div>
+        <div>
+            <img src="https://image.mux.com/VZNhkabs2mLwRfjO6j600Q7OmfLxm5VmV/thumbnail.jpg?width=600&height=600&time=2.0"
+                alt="">
+            <h3>Best Weekend Getaways From Mumbai Under 250 Kms</h3>
+            <p>By</p>
+            <p>Namita Mittal</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+<script type="module">
+    import navbar from "./navbar.js"
+    console.log(navbar)
+    document.getElementById("mainn").innerHTML = navbar()
+</script>
+<script>
+    let imageArr = [
+        ["https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660817736_078_commonarea_07_min.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659608221_d0f7de4a_b1d9_40e0_bba0_d0527a824e78.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660808085_shutterstock_1611239635_min.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660310642_j_1.jpg"
+
+        ],
+        ["https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660807748_shutterstock_1876968394_1_min.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660807837_shutterstock_1967521477_min.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659354694_yaopey_yong_flmptucjkto_unsplash.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660807878_saudi_farasan.jpg"],
+        [
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660628672_131902158_8404856472920890_2578227520681040006_n.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1653562686_275721311_336154091889496_2451172917242741439_n.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1658236943_1200px_har_ki_dun.jpg",
+            "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659609068_292964698_360983962777135_5575874099652238243_n.jpg"
+        ]
+    ]
+
+    h4 = [
+        [
+            "goSTOPS", "singapore tourism board", "saudi tourism authority", "Niyo Global"
+        ],
+        [
+            "saudi tourism authority", "saudi tourism authority", "AmberStudent", "saudi tourism authority"
+        ],
+        [
+            "Niyo Global", "singapore tourism board", "goSTOPS", "singapore tourism board"
+
+        ]
+    ]
+
+
+    h3 = [
+        [
+            "Experience the Best of Monsoon With These Trendy goSTOPS Stays Under Rs 2,000", "The Panchi Befikra Contest Is Live and Here's Why You Should Participate!", "This Quiz on Saudi Will Help You Design Your Best Adventure!", "India's Top Travel Influencers Share Their Best Secrets for Budget International Trips!"
+
+        ],
+        [
+            "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller",
+            "સાઉદીઃ કેવી રીતે કરવો આ અનોખા દેશનો યાદગાર પ્રવાસ", "Student in London? Here’s Your Guide to Affordable and Exciting Ways to Explore The City!", "সমুদ্র, স্থাপত্য ও ইতিহাসের এক অনন্য মেলবন্ধন - সৌদি আরব ভ্রমণের একটি সম্পূর্ণ ট্রাভেল গাইড"
+        ],
+        [
+            "8 Cool Things That You Can Do At International Airports That'll Make You Want To Have A Layover",
+            "Visit These 7 Chic Bars in Singapore if You’re in the Mood to Live up the Night!", "Trek through Himalayan Forests & Waterfalls under Rs 8,000 with goEXPERIENCES by goSTOPS!", "These Staycation Hotels in Singapore Will Make You Wish Your Vacation Lasts Forever"
+        ]
+    ]
+    let move=document.getElementById("moving_id")
+
+    let crauser1 = document.querySelector(".crauser1")
+    let crauser2 = document.querySelector(".crauser2")
+    let crauser3 = document.querySelector(".crauser3")
+    let crauser4 = document.querySelector(".crauser4")
+
+    let h41 = document.querySelector("#h41")
+    let h42 = document.querySelector("#h42")
+    let h43 = document.querySelector("#h43")
+    let h44 = document.querySelector("#h44")
+
+
+    let h31 = document.querySelector("#h31")
+    let h32 = document.querySelector("#h32")
+    let h33 = document.querySelector("#h33")
+    let h34 = document.querySelector("#h34")
+
+
+    console.log('crauser:', crauser1)
+    let buttonEvent = document.getElementById("btn_right")
+    let leftbuttonEvent = document.getElementById("btn_left")
+    let imageState = 0;
+    let indexmove = 0;
+    let texth4 = 0;
+    let h4text = 0;
+    let texth3 = 0;
+    let h3text = 0;
+    buttonEvent.addEventListener("click", function () {
+        imageState++
+        texth4++
+        texth3++
+
+
+
+        crauser1.src = imageArr[imageState][indexmove]
+        h41.innerText = h4[texth4][h4text]
+        h31.innerText = h3[texth3][h3text]
+        h4text++
+        indexmove++
+        h3text++
+        crauser2.src = imageArr[imageState][indexmove]
+        h42.innerText = h4[texth4][h4text]
+        h32.innerText = h3[texth3][h3text]
+        indexmove++
+        h4text++
+        h3text++
+        crauser3.src = imageArr[imageState][indexmove]
+        h43.innerText = h4[texth4][h4text]
+        h33.innerText = h3[texth3][h3text]
+        indexmove++
+        h4text++
+        h3text++
+        crauser4.src = imageArr[imageState][indexmove]
+        h44.innerText = h4[texth4][h4text]
+        h34.innerText = h3[texth3][h3text]
+
+        // imageState++
+
+        indexmove = 0
+        h4text = 0
+        h3text = 0
+        
+
+
+        // console.log('imageState:', imageState)
+    })
+    console.log('imageState:', imageState)
+
+
+    leftbuttonEvent.addEventListener("click", function () {
+        imageState--
+
+        texth4--
+        texth3--
+
+
+
+        crauser1.src = imageArr[imageState][indexmove]
+        h41.innerText = h4[texth4][h4text]
+        h31.innerText = h3[texth3][h3text]
+        h4text++
+        indexmove++
+        h3text++
+        crauser2.src = imageArr[imageState][indexmove]
+        h42.innerText = h4[texth4][h4text]
+        h32.innerText = h3[texth3][h3text]
+        indexmove++
+        h4text++
+        h3text++
+        crauser3.src = imageArr[imageState][indexmove]
+        h43.innerText = h4[texth4][h4text]
+        h33.innerText = h3[texth3][h3text]
+        indexmove++
+        h4text++
+        h3text++
+        crauser4.src = imageArr[imageState][indexmove]
+        h44.innerText = h4[texth4][h4text]
+        h34.innerText = h3[texth3][h3text]
+
+        // imageState++
+
+        indexmove = 0
+        h4text = 0
+        h3text = 0
+
+        console.log(imageState)
+
+    })
+
+
+
+
+    // console.log(imageArr[1])
+
+
+    document.querySelector(".smallDiv").addEventListener("click",function(){
+        window.location.href="mindful.html"
+    })
+
+
+
+
+
+
+</script>

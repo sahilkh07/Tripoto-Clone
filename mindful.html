@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful</title>
+    <style>
+        #main {
+            width: 100%;
+            height: 450px;
+            border: 1px solid red;
+            background-image: url("https://cdn1.tripoto.com/media/transfer/img/1789711/Image/1656336375_offbeat_places_2_1.gif");
+            /* background-image: image-set(width:100%); */
+            background-size: 100% 450px;
+
+        }
+
+        #navbar {
+            color: #fff;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            font-family: inherit;
+            position: fixed;
+
+
+
+        }
+
+        #navbar>div:nth-child(1) {
+            margin-right: 650px;
+
+        }
+
+        #main>h1 {
+            color: white;
+            margin-top: 100px;
+
+            text-align: center !important;
+            font-weight: bold;
+        }
+        #small{
+            width: 60%;
+            height: 40px;
+            margin-left: 140px;
+            /* border: 1px solid red; */
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        #small>img{
+            width: 15px;
+        }
+        #small>img+p{
+            margin-top: -20px;
+            margin-left: 25px;
+            /* color: chocolate; */
+            color: #333;
+        }
+        #small>img+p+p{
+            margin-top: -25px;
+            margin-left: 45px;
+            /* color: chocolate; */
+            color: #2f9bdb;
+        }
+        #small>img+p+p+p{
+            margin-top: -26px;
+            margin-left: 135px;
+            /* color: chocolate; */
+            color: #333;
+        }
+        #small>img+p+p+p+p{
+            margin-top: -26px;
+            margin-left: 165px;
+            /* color: chocolate; */
+            color: #333;
+        }
+        #small+h1, #small+h1+p{
+            margin-left: 140px;
+        }
+        #Tripoto {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:repeat(4,480px);
+            gap: 30px;
+            width: 80%;
+            margin: auto;
+            /* font-family: HelveticaNeue",Helvetica,Arial,sans-serif; */
+            font-family: -apple-system, helvetica, arial, sans-serif
+        }
+
+        #Tripoto>div {
+            border-bottom: 1px solid red;
+            /* border: 1px solid red; */
+            cursor: pointer;
+
+
+
+        }
+
+        #Tripoto>div>img {
+            width: 100%;
+            border-radius: 5px;
+
+        }
+
+        #Tripoto>div>img+h4 {
+            text-transform: uppercase;
+            color: #359391;
+            font-size: 15px;
+
+
+        }
+
+        #Tripoto>div>img:nth-child(4) {
+            width: 4%;
+        }
+
+        #Tripoto>div>h4:nth-child(5) {
+            margin-top: -20px;
+            margin-left: 30px;
+            font-size: 15px;
+            color: #359391
+        }
+
+        #Tripoto>div>p:nth-child(7) {
+            margin-top: -34px;
+            margin-left: 55px;
+            font-size: 15px;
+            color: #359391
+        }
+
+        #Tripoto>div>button:nth-child(9) {
+
+
+            margin-left: 30px;
+
+        }
+
+        #Tripoto>div>button:nth-child(8) {
+            /* margin-bottom: 30px; */
+
+
+            margin-left: 250px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <body>
+        <div id="main">
+            <div id="mainn"></div>
+            
+        </div>
+        <div id="small">
+            <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/mini-logo.png" alt="">
+            <p> > </p>
+            <p>Collections</p>
+            <p> > </p>
+            <p>Tripoto'S Mindful Retreats</p>
+    
+        </div>
+        <h1>
+            Tripoto's Mindful Retreats
+        </h1>
+        <p>Experience offbeat places by staying at unique properties and engaging in interesting activities. Your meals, stay and activities are included in the price!</p>
+        <div id="Tripoto">
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg" alt="">
+                <h4>package</h4>
+                <h3>Explore Auroville on a Cycle and Learn the Art of Kalaripayattu | Beyond Community, Auroville </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Auroville</h4>
+                <p>₹ 6,700</p>
+                <p>/person</p>
+                <button>Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
+                <h4>package</h4>
+                <h3>Learn Sketching & Go on Guided Forest Walks Around the Himalayan Trails | Cosmic Geeks, Dharamkot </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Himachal Pradesh</h4>
+                <p>₹ 8,300</p>
+                <p>/person</p>
+                <button>Book now</button>
+            </div>
+            
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1638778652_image_cover_b.jpg" alt="">
+                <h4>package</h4>
+                <h3>Learn to Cook a Traditional Rajasthani Meal at a 200 Year-Old Luxury Haveli </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Rajasthan</h4>
+                <p>₹ 3,799</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654504108_ce_c1.jpg" alt="">
+                <h4>package</h4>
+                <h3>Trek to Triund and Stay At The Residence Of Kangra’s Maharaja | Clouds End Villa, Dharamshala  </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Dharamshala</h4>
+                <p>₹ 13,750</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645772836_image_cover.jpg" alt="">
+                <h4>package</h4>
+                <h3>Stargaze & Enjoy a Picnic in the Hills as You Stay at a Unique A-Framed Cottage | Urna Boutique Stay </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Mukteshwar</h4>
+                <p>₹ 6,899</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg" alt="">
+                <h4>package</h4>
+                <h3>Explore One of Asia's Spookiest Spots While Unwinding Amidst Nature | Seegreen Lodges, Mussoorie </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Mussoorie</h4>
+                <p>₹ 7,500</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg" alt="">
+                <h4>package</h4>
+                <h3>Explore an Artist’s Estate & Stay in a Kathkuni Home Hidden in Manali's Forests | NORTH </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Manali</h4>
+                <p>₹ 9,850</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1640323403_image_cover_b.jpg" alt="">
+                <h4>package</h4>
+                <h3>Learn Yoga While Unwinding Amidst Nature & Hike to a Gorgeous Waterfall | Nature Care Village </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Rishikesh</h4>
+                <p>₹ 4,799</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657204838_omya_img_cover_b.jpg" alt="">
+                <h4>package</h4>
+                <h3>Take a Dip in a River and Ride on a Toy Train Amidst Mountains | Omya Forest Camps, Bir</h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Bir</h4>
+                <p>₹ 8,599</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645595596_image_cover_b_2.jpg" alt="">
+                <h4>package</h4>
+                <h3>Embark on an Adventure with Night Safari & Cycle Safari as You Spot Tigers | Mandaal Corbett </h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Ramnagar</h4>
+                <p>₹ 10,000</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653394847_nw_c2.jpg" alt="">
+                <h4>package</h4>
+                <h3>Stargaze & Pluck Your Own Herbs For Tea at This Kumaoni Retreat | Once Upon a Forest, Hariyal</h3>
+                <img src="data:image/svg+xml,%3csvg width='11px' height='15px' viewBox='0 0 11 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3cg transform='translate(-36.000000%2c -35.000000)' fill='%23359391'%3e %3cpath d='M46.1538462%2c43.5714286 L41.5%2c50 L36.8461538%2c43.5714286 L36.8670256%2c43.5714286 C36.3173077%2c42.7142857 36%2c41.6851429 36%2c40.5714286 C36%2c37.4854286 38.4535641%2c35 41.5%2c35 C44.5464359%2c35 47%2c37.4854286 47%2c40.5714286 C47%2c41.6851429 46.6826923%2c42.7142857 46.1329744%2c43.5714286 L46.1538462%2c43.5714286 Z M41.4294872%2c39 C40.6150641%2c39 39.9487179%2c39.675 39.9487179%2c40.5 C39.9487179%2c41.325 40.6150641%2c42 41.4294872%2c42 C42.2439103%2c42 42.9102564%2c41.325 42.9102564%2c40.5 C42.9102564%2c39.675 42.2439103%2c39 41.4294872%2c39 L41.4294872%2c39 Z' id='Location-white'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                    alt="">
+                <h4>Nainital</h4>
+                <p>₹ 5,199</p>
+                <p>/person</p>
+                <button style="margin-top:20px ;">Book now</button>
+            </div>
+    
+        </div>
+
+
+
+    
+</body>
+</html>
+<script type="module">
+    import navbar from "./navbar.js"
+    console.log(navbar)
+    document.getElementById("mainn").innerHTML = navbar()
+
+</script>
