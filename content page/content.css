@@ -1,0 +1,170 @@
+*{
+    font-family: sans-serif;
+}
+
+#container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+#left{
+    /* border: 1px solid black;  */
+    width: 50%;
+    height: 600px;
+
+}
+#ex_left{
+    /* position: absolute; */
+    /* border: 1px solid black; */
+    height: 150px;
+    width: 80px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    transition: all 2s ease;
+    opacity: 1;
+    /* position: fixed; */
+}
+#left h1{
+    font-size: 30px;
+}
+#right{
+    /* border: 1px solid red; */
+    width: 22%;
+    height: 600px;
+    padding-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#top_para{
+    font-size: 12px;
+}
+#bar{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bar img{
+    margin-left: 10px;
+    width: 42px;
+    border-radius: 50%;
+}
+#bar>#bar_left{
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+    font-weight: bold;
+}
+#bar_right{
+    /* border: 1px solid black; */
+    display: flex;
+    font-size: 12px;
+    height: 80%;
+    align-items: center;
+    margin-right: 20px;
+}
+#bar_right p{
+    width: 20%;
+    margin: auto;
+    line-height: 20px;
+}
+#facebook{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(60, 60, 207);
+    color: white;
+    padding: 8px 8px 0px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#bar+img{
+    width: 100%;
+    margin-top: 40px;
+}
+label{
+    font-size: 14px;
+}
+#right>div:nth-child(1) input{
+    width: 250px;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 12px;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(252, 248, 248);
+}
+#selection{
+    width: 260px;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 12px;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(252, 248, 248);
+}
+#check{
+    margin-top: 10px;
+    font-size: 14px;
+}
+#check input{
+    margin-top: 10px;
+}
+#booked{
+    font-weight: bold;
+}
+#request{
+    /* font-size: 20px; */
+    width: 260px;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 0 10px 0;
+    background-color: #2F9BDB;
+    color: white;
+    border-radius: 5px;
+
+}
+#para_a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333333;
+    text-align: left;
+    float: none;
+    font-size: 18px!important;
+    text-indent: inherit!important;
+    /* -webkit-font-smoothing: antialiased; */
+    line-height: 36px;
+    word-break: break-word;
+    word-wrap: break-word;
+    /* word-spacing: -2px; */
+}
+h3{
+    font-family: Georgia, serif;
+    float: none;
+}
+#munnar img{
+    width: 100%;
+}
+#goa img{
+    width: 100%;
+}
+#ooty img{
+    width: 100%;
+}

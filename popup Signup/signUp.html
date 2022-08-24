@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn/SignUP</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="corner">
+        <button id="show-login">Sign In</button>
+    </div>
+    <div id="container">
+        <div id="popUp" class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form-element">
+                <a href="#" class="fa fa-facebook"></a>
+                <button id="facebook">Log in with Facebook</button>
+            </div>
+            <div class="form-element">
+                <a id="fa-google" href="#" class="fa fa-google"></a>
+                <button id="google">Log in with Google</button>
+            </div>
+            <label id="or" for="OR">OR</label>
+            <div id="email" class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div id="password" class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label id="remember" for="remember-me">Remember-Me</label>
+            </div>
+            <div id="login" class="form-element">
+                <button id="login">LOG IN</button>
+            </div>
+            <div class="form-element">
+                <a id="forget" href="#">Forgot Password</a>
+            </div>
+            <div id="signup" class="form-element">
+                <label id="text" for="dont">Don't have an account?</label>
+                <a id="loginpage" href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- SignUp -->
+
+
+        <div id="popUp" class="popup1">
+            <div class="close-btn">&times;</div>
+            <div class="form-element">
+                <a id="signFa" href="#" class="fa fa-facebook"></a>
+                <button id="facebook">Sign Up with Facebook</button>
+            </div>
+            <div class="form-element">
+                <a id="signGo" href="#" class="fa fa-google"></a>
+                <button id="google">Sign Up with Google</button>
+            </div>
+            <label id="or" for="OR">OR</label>
+            <div id="name" class="form-element">
+                <!-- <label for="email">Email</label> -->
+                <input type="text" id="name" placeholder="Enter Name">
+            </div>
+            <div id="email" class="form-element">
+                <!-- <label for="email">Email</label> -->
+                <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div id="password" class="form-element">
+                <!-- <label for="password">Password</label> -->
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <div id="mobile" class="form-element">
+                <!-- <label for="password">Password</label> -->
+                <input type="text" id="mobile" placeholder="Enter Ph no">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label id="remember" for="remember-me">Subscribe to the newsletter</label>
+            </div>
+            <div class="form-element">
+                <button id="signUp">SIGN UP</button>
+            </div>
+            <div class="form-element">
+                <a id="forget" href="#">
+                    By signing up, you agree to Tripoto's terms and conditions and privacy policy.
+                </a>
+            </div>
+            <!-- <div id="signup" class="form-element">
+                <label id="text" for="dont">Already have an account?</label>
+                <a id="loginpage" href="#">Log In</a>
+            </div> -->
+        </div>
+</body>
+</html>
+
+<script src="signUp.js"></script>
