@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #navbar{
+      background-color: #c22c91;
+      display: flex;
+      padding: 12px;
+      position:fixed;
+      overflow: hidden;
+      
+      top: 0;
+      align-items: center;
+      width: 100%;
+      max-width: inherit;
+    
+      
+      
+  }
+  
+  form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 20px;
+    
+  }
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+  
+  #hq{
+    margin-top: 100px;
+  }
+  
+  
+    #explore{
+      
+      display: flex;
+      gap: 20px;
+      
+  
+    }
+    
+    #explore>button{
+      padding: 20px 60px;
+      border-radius: 30px;
+      background-color: #c22c91;
+      color: white;
+      font-size: larger;
+      border: 0px;
+  
+    }
+    .trending{
+      display: flex;
+      margin: auto;
+      justify-content: center;
+    
+    }
+    .card>img{
+      width: 350px;
+      height:250px;
+    }
+    .card{
+      width: 30%;
+    }
+    #events{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .eventCard>img{
+      width: 350px;
+      height: 250px;
+      
+    }
+    .center{
+      display: flex;
+      justify-content: center;
+    }
+    .center>img{
+      width: 80%;
+    }
+    #adventure{
+      display: flex;
+      justify-content: center;
+     
+    }
+    .adventDiv>img{
+      width: 260px;
+      height: 160px;
+    }
+    .adventDiv{
+      width: 22%;
+    }
+    #shopping{
+      display: flex;
+      justify-content: center;
+    }
+    .shopDiv{
+      width:22%
+    }
+     .shopDiv>img{
+      width: 260px;
+      height: 160px;
+    }
+    .topThings{
+      display: flex;
+      justify-content: center;
+    }
+    .top{
+      width:22%
+    }
+     .top>img{
+      width: 260px;
+      height: 160px;
+    }
+    .book>img{
+      width: 350px;
+      height:250px;
+    }
+    .flex{
+      display:flex;
+      justify-content: space-between;
+    
+      width: 90%;
+    }
+    .book{
+      width: 100%;
+      max-width: fit-content;
+    }
+    hr{
+      width: 95%;
+    }
+  
+    
+   
+  
