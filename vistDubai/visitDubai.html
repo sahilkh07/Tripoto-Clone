@@ -20,22 +20,20 @@
 
     </div>
 
-        <video id="dubai" class="width-100 outline-none absolute object-cover height-100"
+    <video id="dubai" class="width-100 outline-none absolute object-cover height-100"
         poster="https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1643113294_2000_400.jpg" playsinline=""
         controls="" loop="" muted="" autoplay="" preload="auto" controlslist="nodownload" __idm_id__="286721">
-            <!-- class= -->
-            <source src="https://stream.mux.com/XdWcF8Xx02ekQt772XFZgIZXGNlr5BdXO/high.mp4"
-                type="application/x-mpegURL">
-            <source src="https://stream.mux.com/XdWcF8Xx02ekQt772XFZgIZXGNlr5BdXO/high.mp4" type="video/mp4">
-            <source src="https://stream.mux.com/XdWcF8Xx02ekQt772XFZgIZXGNlr5BdXO/high.mp4" type="video/mp4"><img
-                class="width-100"
-                src="https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1643113294_2000_400.jpg"
-                alt="banner video">
-        </video>
-   
+        <!-- class= -->
+        <source src="https://stream.mux.com/XdWcF8Xx02ekQt772XFZgIZXGNlr5BdXO/high.mp4" type="application/x-mpegURL">
+        <source src="https://stream.mux.com/XdWcF8Xx02ekQt772XFZgIZXGNlr5BdXO/high.mp4" type="video/mp4">
+        <source src="https://stream.mux.com/XdWcF8Xx02ekQt772XFZgIZXGNlr5BdXO/high.mp4" type="video/mp4"><img
+            class="width-100" src="https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1643113294_2000_400.jpg"
+            alt="banner video">
+    </video>
 
 
-   
+
+
 
 
     <h1 id="hq">Explore Dubai</h1>
@@ -54,7 +52,26 @@
         </button>
     </div>
     <h2>Watch the Ultimate Dubai Challenge feat. Aisha Ahmed and Ayush Mehra</h2>
-    <iframe src="https://youtu.be/_usDZ6osnR4" frameborder="0"></iframe>
+
+    <div id="container">
+        <div class="video_container">
+            <div class="video"><video poster="https://img.youtube.com/vi/QmSd8XidTAo/sddefault.jpg" src="https://www.youtube.com/embed/J9sfPFfnE1w"></video></div>
+            <div class="video"><video poster="https://img.youtube.com/vi/JFHnH4p4Mn4/sddefault.jpg" src="https://www.youtube.com/embed/JFHnH4p4Mn4"></div>
+            <div class="video"><video poster="https://img.youtube.com/vi/LMZIVF6mCNM/sddefault.jpg" src="https://www.youtube.com/embed/LMZIVF6mCNM"></div>
+            <div class="video"><video poster="https://img.youtube.com/vi/JFHnH4p4Mn4/sddefault.jpg" src=""></div>
+            <div class="video"><video poster="https://img.youtube.com/vi/JFHnH4p4Mn4/sddefault.jpg" src=""></div>
+        </div>
+        <div class="popup_video">
+            <span>&times;</span>
+            
+            <iframe width="598" height="400" src=""
+               
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
 
 
     <h1>What's Trending</h1>
@@ -290,3 +307,15 @@
 </body>
 
 </html>
+<script>
+
+    document.querySelectorAll(".video_container video").forEach(vid => {
+        vid.onclick = () => {
+            document.querySelector(".popup_video").style.display = "block";
+            document.querySelector(".popup_video iframe").src=vid.getAttribute('src')
+        }
+    })
+    document.querySelector(".popup_video span").onclick = () => {
+        document.querySelector(".popup_video").style.display = "none"
+    }
+</script>
