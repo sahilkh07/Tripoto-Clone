@@ -46,6 +46,7 @@ h3 = [
     ]
 ]
 let move = document.getElementById("moving_id")
+let appndButton=document.getElementById("moving_id")
 
 let crauser1 = document.querySelector(".crauser1")
 let crauser2 = document.querySelector(".crauser2")
@@ -65,16 +66,81 @@ let h34 = document.querySelector("#h34")
 
 
 console.log('crauser:', crauser1)
-let buttonEvent = document.getElementById("btn_right")
-let leftbuttonEvent = document.getElementById("btn_left")
+
+
+//  buttonEvent = document.getElementById("btn_right")
+// let leftbuttonEvent = document.getElementById("btn_left")
+// let leftbuttonEvent=document.createElement("button")
+// leftbuttonEvent.setAttribute("id","btn_left")
+// leftbuttonEvent.innerText="<"
+// leftbuttonEvent.setAttribute("class","btn_left_class")
+
+
 let imageState = 0;
 let indexmove = 0;
 let texth4 = 0;
 let h4text = 0;
 let texth3 = 0;
 let h3text = 0;
+let extract;
+console.log('extract:', extract)
+let buttonEvent=document.createElement("button")
+    
+buttonEvent.setAttribute("id","btn_right")
+buttonEvent.innerText=">"
+buttonEvent.setAttribute("class","btn_right_class")
+
+// let leftbuttonEvent=document.createElement("button")
+if(imageState>0){
+    let leftbuttonEvent=document.createElement("button")
+    leftbuttonEvent.setAttribute("id","btn_left")
+    leftbuttonEvent.innerText="<"
+    leftbuttonEvent.setAttribute("class","btn_left_class")
+    appndButton.append(leftbuttonEvent)
+
+}
+let leftbuttonEvent=document.createElement("button")
+leftbuttonEvent.setAttribute("id","btn_left")
+leftbuttonEvent.innerText="<"
+leftbuttonEvent.setAttribute("class","btn_left_class")
+
+// let localstate=JSON.parse(localStorage.getItem("imagestate"))
+// if(localstate>0){
+//     leftbuttonEvent=document.createElement("button")
+//     leftbuttonEvent.setAttribute("id","btn_left")
+//     leftbuttonEvent.innerText="<"
+//     leftbuttonEvent.setAttribute("class","btn_left_class")
+//     // leftclick()
+//     appndButton.append(leftbuttonEvent)
+
+// }
+// console.log('imageState:', imageState)
 buttonEvent.addEventListener("click", function () {
-    imageState++
+    
+    // if(imageState<2){
+    //     let buttonEvent=document.createElement("button")
+    
+    //     buttonEvent.setAttribute("id","btn_right")
+    //     buttonEvent.innerText=">"
+    //     buttonEvent.setAttribute("class","btn_right_class")
+    
+    // }
+
+    extract=imageState++
+    localStorage.setItem("imagestate",JSON.stringify(extract+1))
+    // if(imageState<2){
+    
+    //     buttonEvent.setAttribute("id","btn_right")
+    //     buttonEvent.innerText=">"
+    //     buttonEvent.setAttribute("class","btn_right_class")
+    
+    // }
+    if(imageState>0){
+        
+    
+    }
+    
+    console.log('imageState:', imageState)
     texth4++
     texth3++
 
@@ -112,6 +178,8 @@ buttonEvent.addEventListener("click", function () {
 
     // console.log('imageState:', imageState)
 })
+appndButton.append(buttonEvent)
+
 console.log('imageState:', imageState)
 
 
@@ -154,6 +222,8 @@ leftbuttonEvent.addEventListener("click", function () {
     console.log(imageState)
 
 })
+appndButton.append(leftbuttonEvent)
+
 
 
 
@@ -162,7 +232,7 @@ leftbuttonEvent.addEventListener("click", function () {
 
 
 document.querySelector(".smallDiv").addEventListener("click", function () {
-    window.location.href = "mindful.html"
+    window.location.href = "/mindfulpage/mindful.html"
 })
 
 
