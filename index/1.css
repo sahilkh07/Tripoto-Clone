@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+font-family: 'circularairpro-bold', Helvetica, Arial, sans-serif;
+}
+#main{
+    height: 400px;
+    background-image: url("https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg");;
+        }
+  #smallDiv{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+
+    
+  }
+  .parts>img{
+    width: 100%;
+    height: 70px;
+
+  }
+  #new{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+  }
+  .item{
+    width: 22%;
+  }
+  .item>img{
+    height: 150px;
+    width: 280px;
+  }
+  #mid{
+    display: flex;
+    justify-content: center;
+  }
+  #mid>img{
+    width: 92%;
+  }
+  #august{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .month{
+    width: 22%;
+  }
+  .month>img{
+    width: 280px;
+    height: 150px;
+  }
+  .trending{
+display: flex;
+margin: auto;
+justify-content: center;
+gap: 20px;
+
+
+}
+.card>img{
+width: 100%;
+height:180px;
+border-radius: 3%;
+}
+.card{
+width: 30%;
+}
+.card p{
+color: #359391;
+font-weight: bold;
+font-size: small;
+margin-bottom: 10px;
+}
+.flex{
+display:flex;
+justify-content: space-between;
+margin-bottom: 2%;
+width: 100%;
+
+
+}
+
+.book{
+width: 100%;
+max-width: fit-content;
+}
+hr{
+width: 100%;
+}
+.green{
+color: #359391;
+margin-left: 5px;
+font-size: small;
+font-weight: bold;
+
+}
+.grey{
+color: gray;
+margin-right: 140px;
+}
+.getQ{
+padding: 2%;
+border: 1px solid green;
+background: white;
+color: #359391;
+border-radius: 5px;
+font-weight: 600;
+}
+.day{
+background-color: #359391;
+border-radius: 5px;
+
+color: white;
+border-radius: 20%;
+border: 0px;
+font-size: smaller;
+padding:7px 2px;
+}
+.partnersfor{
+display: flex;
+
+align-items: center;
+}
+.partnersfor>img {
+width: 8%;
+border-radius: 50px;
+}
+
+.partnersfor>img+p {
+margin-bottom: -7px;
+
+}
+#spotlight{
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+.pics>img{
+width: 380px;
+height: 500px;
+}
+#plan{
+display: flex;
+justify-content: center;
+gap:20px
+}
+.next>img{
+width: 280px;
+height: 300px;
+}
+.heading{
+font-size: 30px;
+margin-left: 40px;
+font-weight: 550;
+margin-bottom: 12px;
+margin-top: 30px;
+}
+.orange{
+color: orangered;
+font-weight: bold;
+font-size: 12px;
+margin-bottom: 10px;
+
+}
+.title{
+line-height: 1.4;
+margin-bottom: 30px;
+}
+.blue{
+line-height: 1.4;
+margin-bottom: 30px;
+color: skyblue;
+
+}
+.sizeable{
+font-size: 14px;
+}
+.title2{
+line-height: 1.4;
+margin-bottom: 10px;
+}
+.play{
+width: 22%;
+}
+.play>img{
+width: 280px;
+height: 210px;
+}
