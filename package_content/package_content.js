@@ -144,3 +144,17 @@ dropdownBtn4.addEventListener('click',()=>{
       menuContent4.style.display="";
    }
 })
+
+document.getElementById("num").addEventListener("change",function(){
+    let value = document.getElementById("num").value;
+    console.log(value);
+    if(value=='null'){
+       return document.getElementById("value").innerText ='Rs. '+ 6700;
+    }
+    document.getElementById("value").innerText ='Rs. '+ value*6700;
+
+})
+
+// let prod =6700 + val*6700;
+
+// document.getElementById("value").innerText = prod;

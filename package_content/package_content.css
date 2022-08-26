@@ -10,6 +10,7 @@
     /* border: 1px solid black; */
     width: 55%;
     height: auto;
+    margin-right: 25%;
 }
 #right-box{
     /* border: 1px solid black; */
@@ -55,17 +56,20 @@
 
 #right-box{
     /* border: 1px solid red; */
+    position: fixed;
+    right: 10%;
     width: 22%;
     height: 600px;
     padding-left: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 #right-box>div:nth-child(1) input{
     width: 250px;
     height: 25px;
     margin-top: 10px;
     font-size: 12px;
-    border: none;
+    border: 1px solid #c0bfbf;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -73,12 +77,29 @@
     outline: none;
     background-color: rgb(252, 248, 248);
 }
+#right-box h4{
+    font-size: 14px;
+}
 #selection{
     width: 260px;
-    height: 25px;
+    height: 30px;
     margin-top: 10px;
     font-size: 12px;
-    border: none;
+    border: 1px solid #c0bfbf;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(252, 248, 248);
+}
+
+#num{
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    border: 1px solid #c0bfbf;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -88,10 +109,13 @@
 }
 #check{
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 #check input{
     margin-top: 10px;
+}
+#amount-box{
+    font-size: 14px;
 }
 #booked{
     font-weight: bold;
@@ -220,4 +244,40 @@ h1{
 .dropdown3,.dropdown4{
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+#comment{
+    border: 1px solid #c0bfbf;
+    width: 50%;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    margin-top: 50px;
+
+}
+#star{
+    border: 1px solid #c0bfbf;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+#btm_star{
+    border: 1px solid #c0bfbf;
+    width: 80%;
+    padding: 0px 10px 0px 10px;
+    height: 100px;
+    margin-left: 8.4%;
+}
+#post{
+    margin-left: 8.4%;
+    padding: 8px 12px;
+    background-color: #2F9BDB;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
 }

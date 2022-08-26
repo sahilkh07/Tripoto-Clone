@@ -10,16 +10,24 @@ body{
 .corner{
     position: absolute;
     top: 10px;
-    left: 80%;
+    left: 52%;
 }
 .corner button{
-    padding: 10px 20px;
-    font-size: 15px;
+    /* padding: 10px 20px; */
+    width: 100px;
+    font-size: 13px;
     font-weight: 600;
-    color: #222;
+    color: white;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+.corner>button:nth-child(1){
+    width: 170px;
+}
+.corner>button:nth-child(4){
+    width: 120px;
 }
 .popup{
     position: absolute;
@@ -32,6 +40,7 @@ body{
     background: #fff;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    z-index: 5;
     transition: top 0ms ease-in-out 100ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms
