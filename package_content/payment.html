@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Status</title>
+
+    <style>
+        #container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container img{
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+
+</html>
+
+<script>
+let y = JSON.parse(localStorage.getItem("addingAmount"));
+
+let walletAmount = 0
+
+y.forEach(function(ele){
+    walletAmount = walletAmount + parseInt(ele)
+})
+
+
+console.log(walletAmount);
+    // console.log(walletAmount);
+
+    let data = JSON.parse(localStorage.getItem("pin"));
+
+    let count = 0;
+
+    let count1 = 0;
+
+    let id = setInterval(load, 500)
+
+    function load() {
+
+        document.getElementById("container").innerHTML = "";
+
+        if (count == 8) {
+
+           return clearInterval(id);
+        }
+        let div = document.createElement("div");
+
+        let image = document.createElement("img");
+        image.src = "https://cdn.dribbble.com/users/2104734/screenshots/13842223/media/c1509a709c9b34660d62ade8c5d24334.gif";
+
+        count++;
+
+        div.append(image);
+        document.getElementById("container").append(div);
+
+        console.log(count);
+    }
+    let arr = [];
+
+    function success() {
+
+        if (data[data.length - 1]<=walletAmount) {
+            document.getElementById("container").innerHTML = "";
+
+
+            let res = walletAmount-data[data.length-1]
+
+            let div = document.createElement("div");
+
+            let image = document.createElement("img");
+            image.src = "https://i.pinimg.com/originals/b9/88/b7/b988b7c3e84e1f83ef9447157831b460.gif";
+
+            div.append(image);
+            document.getElementById("container").append(div);
+
+            arr.push(res)
+            
+
+            localStorage.setItem("addingAmount",JSON.stringify(arr))
+
+        } else {
+            document.getElementById("container").innerHTML = "";
+
+            let div = document.createElement("div");
+
+            let image = document.createElement("img");
+            image.src = "https://digitalpaymentguru.com/wp-content/uploads/2019/08/Transaction-Failed.png";
+
+            div.append(image);
+            document.getElementById("container").append(div);
+        }
+    }
+
+    setInterval(success, 5000)
+
+    let successID = setInterval(ID, 500);
+
+    function ID(){
+        if (count1 == 18) {
+            return window.location.href = "./"
+        }
+        count1++;
+    }
+
+
+
+</script>

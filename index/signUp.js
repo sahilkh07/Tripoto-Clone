@@ -59,13 +59,12 @@ function loginFunction(e){
     let password = document.getElementById("loginPassword").value;
 
 
-    for(let i=0; i<loginData.length; i++){
-        if(loginData[i].email==email && loginData[i].password==password){
+for(let i=0; i<loginData.length; i++){
+    if(loginData[i].email==email && loginData[i].password==password){
             flag = true;
             let name = loginData[i].name
             Login.push(name);
-            localStorage.setItem("dataLogin",JSON.stringify(Login));
-           
+            localStorage.setItem("dataLogin",JSON.stringify(Login));  
         }
     }
 
@@ -76,43 +75,34 @@ function loginFunction(e){
     }else{
         alert("Wrong Credentails")
     }
-
-    // loginData.forEach(function(ele){
-
-    //     let element = {
-    //         email: ele.email,
-    //         password: ele.password
-    //     }
-    
-    // let email = document.getElementById("loginEmail").value;
-    
-    // let password = document.getElementById("loginPassword").value;
-
-    // if(email!=element.email || password!=element.password){
-    //      alert("Wrong Credentials! Login Again");
-
-    //      document.getElementById("loginEmail").value = "";
-    //      document.getElementById("loginPassword").value = "";
-         
-    //      return
-    // }
-
-    // 
-
-    // localStorage.setItem("dataLogin",JSON.stringify(Login));
-    // alert("Login successful");
-    // window.location.href = "1.html"
-
-    // })
 }
+
 display(Login)
+
 function display(Login){
     let data = JSON.parse(localStorage.getItem("dataLogin"))
     
     let btn = document.createElement("button")
-    btn.style.width = '50px'
-    btn.innerText = data[0];
-    document.getElementById("corner").style.left = "48%"
+    let label = document.createElement("li")
+    label.setAttribute("class","ins")
+    btn.style.width = '120px'
+    label.innerText = data[0];
+
+    let ul = document.createElement("ul");
+    let div = document.createElement("div");
+    div.setAttribute("id","margin");
+    let credit = document.createElement("li");
+    credit.innerText = "Credit";
+    credit.style.textAlign = "left";
+    credit.style.fontSize = "12px";
+    credit.setAttribute("id","setAmount")
+
+
+    div.append(credit);
+    label.append(ul)
+    ul.append(div)
+    btn.append(label)
+    document.getElementById("corner").style.left = "45%"
 
     document.getElementById("corner").append(btn)
 }
@@ -150,167 +140,47 @@ function addAmount(e){
 }
 
 let total = JSON.parse(localStorage.getItem("addingAmount"))||[];
+showTotalAmount(total);
 
 let sum = 0;
 
 function addAmountButton(x){
+    if(x==''){
+     alert("Add some amount");
+     return window.location.href = "1.html"
+    }
     // console.log(x);
     sum = parseInt(x);
     total.push(sum);
     localStorage.setItem("addingAmount",JSON.stringify(total))
+    alert("Amount Added")
+    window.location.href = "1.html"
 }
 // Add Amount Function
 
 
-let SlidingImages = [
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660807748_shutterstock_1876968394_1_min.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660628672_131902158_8404856472920890_2578227520681040006_n.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660807837_shutterstock_1967521477_min.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659354694_yaopey_yong_flmptucjkto_unsplash.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660628672_131902158_8404856472920890_2578227520681040006_n.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1653562686_275721311_336154091889496_2451172917242741439_n.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1658236943_1200px_har_ki_dun.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659609068_292964698_360983962777135_5575874099652238243_n.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660817736_078_commonarea_07_min.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1658236943_1200px_har_ki_dun.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660808085_shutterstock_1611239635_min.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    },
-    {
-        image: "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660310642_j_1.jpg",
-        name: "Saudi Tourism Authority",
-        desc: "Offering a Mix of Culture and Modernity, Riyadh Is Perfect for Every Kind of Traveller"
-    }
-];
-
-document.getElementById("left").addEventListener("click",leftfunction);
-
-document.getElementById("right").addEventListener("click",rightfunction);
-
-// console.log(SlidingImages.length);
-
-let index = 0;
-
-function rightfunction(){
-
-    if(index>=10){
-     index = 0;
-    }
-
-    document.getElementById("new").innerHTML = "";
 
 
-
-    for(let i=0; i<4; i++){
-        let div = document.createElement("div");
-
-        let image = document.createElement("img");
-        image.src = SlidingImages[index].image;
-
-        let name = document.createElement('p');
-        name.setAttribute("class","orange")
-        name.innerText = SlidingImages[index].name;
-
-        let desc = document.createElement("h3");
-        desc.setAttribute("class","title");
-        desc.innerText = SlidingImages[index].desc;
-        index++;
-
-        div.append(image,name,desc);
-
-        document.getElementById("new").append(div)
-    }
+function showTotalAmount(total){
+    
+    let sum = 0;
+    total.forEach(function(ele){
+        sum = sum + parseInt(ele);
+        console.log(sum);
+        document.getElementById("setAmount").innerText ="Credit: "+"Rs." +sum
+    })
 }
 
 
-function leftfunction(){
 
-    console.log(index);
 
-    if(index<=3){
-        index = SlidingImages.length-1;
-    }
-
-    document.getElementById("new").innerHTML = "";
+// Sliding Images part - 03
 
 
 
-    for(let i=0; i<4; i++){
 
-        index--;
 
-        let div = document.createElement("div");
 
-        let image = document.createElement("img");
-        image.src = SlidingImages[index].image;
-
-        let name = document.createElement('p');
-        name.setAttribute("class","orange")
-        name.innerText = SlidingImages[index].name;
-
-        let desc = document.createElement("h3");
-        desc.setAttribute("class","title");
-        desc.innerText = SlidingImages[index].desc;
-
-        // let leftbtn = document.createElement("button");
-        // leftbtn.setAttribute("id","left")
-        // leftbtn.innerText = "<"
-
-        div.append(image,name,desc);
-
-        document.getElementById("new").append(div)
-    }
-}
-
-// function leftfunction(){
-//     index--;
-//     if(index<0){
-//         index = SlidingImages.length-1;
-//     }
-//     image.src = SlidingImages[index]
-// }
 
 
 

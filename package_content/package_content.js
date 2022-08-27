@@ -149,12 +149,38 @@ document.getElementById("num").addEventListener("change",function(){
     let value = document.getElementById("num").value;
     console.log(value);
     if(value=='null'){
-       return document.getElementById("value").innerText ='Rs. '+ 6700;
+       return document.getElementById("value").innerText = 6700;
     }
-    document.getElementById("value").innerText ='Rs. '+ value*6700;
+    document.getElementById("value").innerText = value*6700;
 
 })
 
-// let prod =6700 + val*6700;
+// Next Page Property (PAYMENT GATEWAY PROPERTY)
 
-// document.getElementById("value").innerText = prod;
+document.getElementById("request").addEventListener("click",passfunction);
+
+let arr = []
+
+function passfunction(e){
+    
+    e.preventDefault();
+
+    let value = document.getElementById("value");
+
+    let password = value.innerText;
+
+    let email  = document.getElementById("emailInput");
+    let name = document.getElementById("nameInput");
+    if(email.value=="" || name.value==""){
+        return alert("Enter Full Detail")
+    }
+
+    console.log(password);
+
+    window.location.href = "payment.html"
+
+    arr.push(password);
+
+    localStorage.setItem("pin",JSON.stringify(arr));
+}
+

@@ -6,17 +6,35 @@
   body {
 font-family: 'circularairpro-bold', Helvetica, Arial, sans-serif;
 }
+
+/* -----------------------Navbar----------------------------- */
+#navbar{
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 0; 
+  /* left: 50%; */
+  height: 50px;
+  /* width: 150px; */
+  
+  z-index: 100;
+}
+#navbar{
+  width: 100%;
+  /* background-color: blue; */
+}
+nav.scrolled {
+  transition: all 1s;
+  background-color: #2f9bdb;
+}
 #main{
     height: 400px;
     background-image: url("https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg");
-        }
+}
   #smallDiv{
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 20px;
-
-    
+    margin-top: 20px; 
   }
   .parts>img{
     width: 100%;
@@ -26,14 +44,29 @@ font-family: 'circularairpro-bold', Helvetica, Arial, sans-serif;
     /* border: 1px solid black; */
     position: relative;
     width: 90%;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 400px;
+    grid-template-rows: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #new>div,#august>div,#august1>div,#august2>div,#august3>div{
+    padding: 0px 0px 0px 20px;
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+  }
+  #august,#august1,#august2,#august3{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
 
   }
   .newBtn{
-    /* padding: 10px 10px; */
     height: 40px;
     width: 40px;
     color:#359391;
@@ -44,46 +77,63 @@ font-family: 'circularairpro-bold', Helvetica, Arial, sans-serif;
     position: absolute;
     top: 100%;
   }
-  #new img{
+  .newBtn1{
+    height: 40px;
+    width: 40px;
+    color:#359391;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 200%;
+  }
+  .newBtn2{
+    height: 40px;
+    width: 40px;
+    color:#359391;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 250%;
+  }
+  .newBtn3{
+    height: 40px;
+    width: 40px;
+    color:#359391;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 585%;
+  }
+
+#new img,#august img,#august1 img,#august2 img,#august3 img{
     border-radius: 5px;
     width: 230px;
-    height: 150px;
-  }
-  #left{
-    left: 3.5%;
-  }
-  #right{
-    right: 9%;
-  }
-  .item{
-    width: 80%;
-  }
-  #mid{
+    height: 160px;
+}
+#left,#left1,#left2,#left3{
+    left: 5%;
+}
+#right,#right1,#right2,#right3{
+    right: 7.5%;
+}
+#mid{
     display: flex;
     justify-content: center;
-  }
-  #mid>img{
+}
+#mid>img{
     width: 92%;
-  }
-  #august{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  .month{
-    width: 22%;
-  }
-  .month>img{
-    width: 280px;
-    height: 150px;
-  }
-  .trending{
+}
+.trending{
 display: flex;
 margin: auto;
 justify-content: center;
 gap: 20px;
-
-
 }
 .card>img{
 width: 100%;
@@ -104,10 +154,7 @@ display:flex;
 justify-content: space-between;
 margin-bottom: 2%;
 width: 100%;
-
-
 }
-
 .book{
 width: 100%;
 max-width: fit-content;
@@ -190,10 +237,6 @@ font-size: 12px;
 margin-bottom: 10px;
 
 }
-.title{
-line-height: 1.4;
-margin-bottom: 30px;
-}
 .blue{
 line-height: 1.4;
 margin-bottom: 30px;
@@ -203,16 +246,9 @@ color: skyblue;
 .sizeable{
 font-size: 14px;
 }
-.title2{
+.title2,.title,.title3,.title4,.titleLast{
 line-height: 1.4;
 margin-bottom: 10px;
-}
-.play{
-width: 22%;
-}
-.play>img{
-width: 280px;
-height: 210px;
 }
 
 #searchBar{
@@ -234,6 +270,7 @@ height: 210px;
   height: auto;
 }
 button{
+  /* position: relative; */
   /* border: 1px solid black; */
   list-style-type: none;
 }
@@ -246,13 +283,13 @@ ul{
   display: contents;
 }
 .corner>button li ul li{
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 10px;
   background-color: white;
   color: black;
 }
 li{
   list-style-type: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   /* background-color: white; */
 }
 .corner>button li ul{
@@ -265,7 +302,7 @@ li{
   position: absolute;
   top: 10%;
   left: 50%;
-  z-index: 500;
+  z-index: 50;
   height: 200px;
   width: 400px;
   background-color: white;
@@ -298,4 +335,25 @@ li{
   background-color: #359391;
   color: white;
   border-radius: 10px;
+}
+
+#margin{
+  font-size: 12px;
+}
+
+.corner{
+  position: absolute;
+  left: 50%;
+  height: 40px;
+  /* border: 1px solid black; */
+  /* height: 30px; */
+  display: flex;
+  /* width: fit-content; */
+  /* border: 1px solid black; */
+}
+
+.title,.title2,.title3,.title4,.titleLast{
+  font-size: 16px;
+  color: #333333;
+  width: 80%;
 }
