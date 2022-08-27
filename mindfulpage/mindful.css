@@ -18,16 +18,22 @@ body {
 }
 
 #navbar {
-  color: #fff;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   font-family: inherit;
   position: fixed;
+  color: #ffffff;
+}
+#navbar>div>h3{
+  color: #ffffff;
+  
+  background-color: transparent;
+  cursor: pointer;
 }
 
 #navbar > div:nth-child(1) {
-  margin-right: 490px;
+  margin-right: 520px;
 }
 
 #main > h1 {
@@ -79,12 +85,13 @@ body {
 #Tripoto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 480px);
+  grid-template-rows: repeat(4, 530px);
   gap: 30px;
   width: 80%;
   margin: auto;
   /* font-family: HelveticaNeue",Helvetica,Arial,sans-serif; */
   font-family: -apple-system, helvetica, arial, sans-serif;
+
 }
 
 #Tripoto > div {
@@ -151,7 +158,7 @@ body {
   border-radius: 5px;
   margin-top: 20px;
 }
-}
+
 #Tripoto + h1 {
   margin-left: 140px;
   margin-top: 60px;
@@ -322,6 +329,34 @@ body {
   #Tripoto+h1,#Tripoto+h1+h3,#Tripoto+h1+h3+p{
     margin-left: 100px;
   }
+}
+
+
+
+button{
+  /* border: 1px solid black; */
+  list-style-type: none;
+}
+ul{
+  display: none;
+}
+.corner>button li:hover ul{
+  text-align: left;
+  /* border: 1px solid black; */
+  display: contents;
+}
+.corner>button li ul li{
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  color: black;
+}
+li{
+  list-style-type: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* background-color: white; */
+}
+.corner>button li ul{
+  margin-top: 20px;
 }
 
 
