@@ -4,7 +4,7 @@ function navbar(){
     return `<div id="navbar">
     <div>
         
-        <a href="/mainpage/index.html"  id="linkpage"><img src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" alt=""></a>
+        <a href="/mainpage/index.html"  id="linkpage"><img id="logotripoto" src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" alt=""></a>
       
     
     </div>
