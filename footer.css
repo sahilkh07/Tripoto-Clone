@@ -1,0 +1,107 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 300px;
+    border-bottom:1px solid #ddd ;
+    border-top:1px solid #ddd ;
+    display: flex;
+    gap: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: auto;
+    margin-top: 60px;
+}
+#logo>img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    color: grey;
+
+}
+#pl>img{
+    margin-left: 20px;
+    margin-top: 10px;
+
+}.top{
+    font-size: larger;
+    font-weight:1000;
+}#about>p{
+    font-size: small;
+    color: rgb(58, 55, 55);
+    cursor: pointer;
+    
+}#Products>p{
+    font-size: small;
+    color: rgb(58, 55, 55);
+    cursor: pointer;
+}#partner>p{
+    font-size: small;
+    color: rgb(58, 55, 55);
+    cursor: pointer;
+}#Travel>p{
+    font-size: small;
+    color: rgb(58, 55, 55);
+    cursor: pointer;
+}#end{
+margin-left: 43%;
+}
+#contain{
+    display: flex;
+    gap: 20px;
+}.pera{
+    width: 60%;
+}#left{
+    margin-top: 100px;
+}.per{
+    width: 75%;
+}#publish{
+    margin-top: 50%;
+}.hh1{
+    color: rgb(221, 106, 44);
+}
+
+#mainn{
+    width: 90%;
+    height: 250px;
+    justify-content: center;
+}#peragraph{
+    margin-top: 1%;
+}#collection{
+    margin-top: 15%;
+}.swiper-button-next{
+    margin-top: 40%;
+}
+.swiper-button-prev{
+    margin-top: 40%;
+}.image{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+}.img>img{
+    width: 350px;
+    height: 250px;
+    margin-left: 15%;
+    border-radius: 10px;
+}h5{
+    color: rgb(240, 92, 13);
+}#flex{
+    display: flex;
+    gap: 10px;
+}#flex>div>img{
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+}#down{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}#down>div>img{
+    width: 90%;
+    height: 300px;
+}
+border-bottom:1px solid #ddd ;
