@@ -78,6 +78,8 @@ input {
   position: relative;
   scroll-padding-left:3s;
   transition: 5s;
+  color: #333333;
+  font-size: 18px;
   
   
 }
@@ -398,7 +400,8 @@ input {
   margin-left: 400px;
   color: black;
   font-size: 15px;
-  
+  border: none;
+  border: 1px solid black;
 }
 #extra{
     width: 600px;
