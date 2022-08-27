@@ -96,13 +96,14 @@ function display(Login){
     credit.style.textAlign = "left";
     credit.style.fontSize = "12px";
     credit.setAttribute("id","setAmount")
+    
 
 
     div.append(credit);
     label.append(ul)
     ul.append(div)
     btn.append(label)
-    document.getElementById("corner").style.left = "45%"
+    document.getElementById("corner").style.left = "55%"
 
     document.getElementById("corner").append(btn)
 }

@@ -9,14 +9,13 @@ body{
 }
 .corner{
     position: absolute;
-    top: 10px;
-    /* left: 52%; */
+    top: 5px;
 }
 .corner button{
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     width: 100px;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    /* font-weight: 600; */
     color: white;
     background-color: transparent;
     border: none;
@@ -24,10 +23,10 @@ body{
     border-radius: 5px;
 }
 .corner>button:nth-child(1){
-    width: 180px;
+    /* width: 180px; */
 }
 .corner>button:nth-child(4){
-    width: 140px;
+    /* width: 140px; */
 }
 .popup{
     position: absolute;
@@ -41,11 +40,12 @@ body{
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     z-index: 500;
-    transition: top 0ms ease-in-out 100ms,
+    transition: 
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms
 }
 .popup.active{
+    position: fixed;
     top: 50%;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -54,7 +54,7 @@ body{
     transform 200ms ease-in-out 0ms
 }
 .popup .close-btn{
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     width: 15px;

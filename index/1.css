@@ -12,15 +12,12 @@ font-family: 'circularairpro-bold', Helvetica, Arial, sans-serif;
   /* border: 1px solid black; */
   position: fixed;
   top: 0; 
-  /* left: 50%; */
   height: 50px;
-  /* width: 150px; */
-  
-  z-index: 100;
+  z-index: 1000;
 }
 #navbar{
   width: 100%;
-  /* background-color: blue; */
+  padding-left: 10px;
 }
 nav.scrolled {
   transition: all 1s;
@@ -40,15 +37,24 @@ nav.scrolled {
     width: 100%;
     height: 70px;
   }
+  #newNew{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+  }
   #new{
     /* border: 1px solid black; */
     position: relative;
-    width: 90%;
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   #new>div,#august>div,#august1>div,#august2>div,#august3>div{
     padding: 0px 0px 0px 20px;
@@ -58,9 +64,10 @@ nav.scrolled {
   #august,#august1,#august2,#august3{
     /* border: 1px solid black; */
     position: relative;
-    width: 90%;
+    width: 100%;
+    height: auto;
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
@@ -75,9 +82,9 @@ nav.scrolled {
     border-radius: 50%;
     border: none;
     position: absolute;
-    top: 100%;
+    top: 30%;
   }
-  .newBtn1{
+  /* .newBtn1{
     height: 40px;
     width: 40px;
     color:#359391;
@@ -87,29 +94,7 @@ nav.scrolled {
     border: none;
     position: absolute;
     top: 200%;
-  }
-  .newBtn2{
-    height: 40px;
-    width: 40px;
-    color:#359391;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 50%;
-    border: none;
-    position: absolute;
-    top: 250%;
-  }
-  .newBtn3{
-    height: 40px;
-    width: 40px;
-    color:#359391;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 50%;
-    border: none;
-    position: absolute;
-    top: 585%;
-  }
+  } */
 
 #new img,#august img,#august1 img,#august2 img,#august3 img{
     border-radius: 5px;
@@ -117,10 +102,10 @@ nav.scrolled {
     height: 160px;
 }
 #left,#left1,#left2,#left3{
-    left: 5%;
+    left: 0%;
 }
 #right,#right1,#right2,#right3{
-    right: 7.5%;
+    right: 2.5%;
 }
 #mid{
     display: flex;
@@ -295,9 +280,6 @@ li{
 .corner>button li ul{
   margin-top: 20px;
 }
-#margin{
-  margin-top: 20px;
-}
 #Amount{
   position: absolute;
   top: 10%;
@@ -339,21 +321,31 @@ li{
 
 #margin{
   font-size: 12px;
+  margin-top: 20px;
+  width: 150px;
+  position: relative;
+  right: 25%;
 }
 
 .corner{
+  margin-top: 10px;
   position: absolute;
-  left: 50%;
-  height: 40px;
+  left: 62%;
+  height: 15px;
   /* border: 1px solid black; */
-  /* height: 30px; */
   display: flex;
-  /* width: fit-content; */
-  /* border: 1px solid black; */
 }
 
 .title,.title2,.title3,.title4,.titleLast{
   font-size: 16px;
   color: #333333;
   width: 80%;
+}
+.ins{
+  /* border: 1px solid black; */
+}
+
+#coin{
+  width: 15px;
+  margin: auto;
 }
