@@ -3,17 +3,18 @@ body {
 }
 *{
   box-sizing: border-box;
+  color: #333333;
   
 }
 #main {
-  width: 100vw;
+  width: 101vw;
   height: 450px;
   /* border: 1px solid red; */
   background-image: url("https://cdn1.tripoto.com/media/transfer/img/1789711/Image/1656336375_offbeat_places_2_1.gif");
   /* background-image: image-set(width:100%); */
   background-size: 100% 450px;
   margin-top: 0px;
-  border-top: 0px;
+  /* border-top: 0px; */
 }
 
 #navbar {
@@ -26,7 +27,7 @@ body {
 }
 
 #navbar > div:nth-child(1) {
-  margin-right: 650px;
+  margin-right: 490px;
 }
 
 #main > h1 {
@@ -87,9 +88,10 @@ body {
 }
 
 #Tripoto > div {
-  border-bottom: 1px solid red;
-  /* border: 1px solid red; */
+  border-bottom:1px solid #ddd ;
+
   cursor: pointer;
+  
 }
 
 #Tripoto > div > img {
@@ -121,19 +123,21 @@ body {
   color: #359391;
 }
 
-#Tripoto > div > button:nth-child(9) {
-  margin-left: 30px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 100px;
-  padding-bottom: 6px;
-  border: 1px solid #359391;
-  background-color: #fff;
-  color: #359391;
-  border-radius: 5px;
+#Tripoto > div > button:nth-child(8) {
+  margin-left: 270px;
+  /* margin-bottom: 100px; */
+  background-color: #359391;
+  color: #fff;
+  padding: 5px;
+  border-radius: 30px;
+  border: none;
+
+}
+#Tripoto>div+img{
+  width: 20px;
 }
 
-#Tripoto > div > button:nth-child(8) {
+#Tripoto > div > button:nth-child(9) {
   /* margin-bottom: 30px; */
 
   margin-left: 250px;
@@ -145,6 +149,7 @@ body {
   background-color: #fff;
   color: #359391;
   border-radius: 5px;
+  margin-top: 20px;
 }
 }
 #Tripoto + h1 {
@@ -159,12 +164,16 @@ body {
 
 @media screen and (min-width: 401px) and (max-width: 1000px) {
   #main {
-    width: 123%;
-    height: 450px;
-    border: 1px solid red;
+    width: 100vw;
+    top: 0;
+    height: 400px;
     background-image: url("https://cdn1.tripoto.com/media/transfer/img/1789711/Image/1656336375_offbeat_places_2_1.gif");
     /* background-image: image-set(width:100%); */
     background-size: 100% 450px;
+    
+  }
+  *{
+    box-sizing: border-box;
     
   }
  
@@ -173,17 +182,22 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
+    gap: 10px;
     font-family: inherit;
     position: fixed;
-    width: 97%;
+    width: 100%;
     /* margin-top: 0px; */
     background-color: #2f9bdb;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    height: 48px;
+    top: 0px;
   
   }
 
   #navbar > div:nth-child(1) {
-    margin-right: 380px;
+    margin-right: 100px;
   }
 
   #main > h1 {
@@ -230,13 +244,13 @@ body {
   }
   #small + h1,
   #small + h1 + p {
-    margin-left: 140px;
+    margin-left: 100px;
   }
   #Tripoto {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(10, 650px);
-    gap: 30px;
+    /* gap: 10px; */
     width: 80%;
     margin: auto;
     /* font-family: HelveticaNeue",Helvetica,Arial,sans-serif; */
@@ -244,18 +258,20 @@ body {
   }
 
   #Tripoto > div {
-    border-bottom: 1px solid red;
-    /* border: 1px solid red; */
+    border-bottom: 2px solid #ddd;
+   
     cursor: pointer;
     margin-left: 40px;
+    width: 400px;
+    height:500px;
     /* margin-bottom: 100px; */
   }
   #Tripoto > div:nth-child(11) {
-    height: 640px;
+    height: 520px;
   }
 
   #Tripoto > div > img {
-    width: 110%;
+    width: 100%;
     border-radius: 5px;
   }
 
@@ -278,28 +294,197 @@ body {
 
   #Tripoto > div > p:nth-child(7) {
     margin-top: -34px;
-    margin-left: 55px;
+    margin-left: 65px;
     font-size: 15px;
     color: #359391;
   }
 
   #Tripoto > div > button:nth-child(9) {
-    margin-left: 30px;
+    margin-left: 10px;
+    height: 300px;
   }
 
   #Tripoto > div > button:nth-child(8) {
-    /* margin-bottom: 30px; */
+  
 
-    margin-left: 450px;
+    margin-left: 250px;
     margin-bottom: 300px;
 
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 2px;
     border: 1px solid #359391;
     background-color: #fff;
     color: #359391;
     border-radius: 5px;
+  }
+  #Tripoto+h1,#Tripoto+h1+h3,#Tripoto+h1+h3+p{
+    margin-left: 100px;
+  }
+}
+
+
+@media screen and (min-width: 101px) and (max-width: 500px) {
+  #main {
+    width: 120vw;
+    top: 0;
+    height: 400px;
+    background-image: url("https://cdn1.tripoto.com/media/transfer/img/1789711/Image/1656336375_offbeat_places_2_1.gif");
+    /* background-image: image-set(width:100%); */
+    background-size: 100% 450px;
+    
+  }
+  *{
+    box-sizing: border-box;
+    
+  }
+ 
+
+  #navbar {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    font-family: inherit;
+    position: fixed;
+    width: 100%;
+    /* margin-top: 0px; */
+    background-color: #2f9bdb;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    height: 48px;
+    top: 0px;
+  
+  }
+
+  #navbar > div:nth-child(1) {
+    margin-right: 50px;
+  }
+
+  #main > h1 {
+    color: white;
+    margin-top: 100px;
+
+    text-align: center;
+    font-weight: bold;
+  }
+  #small {
+    width: 60%;
+    height: 40px;
+    margin-left: 70px;
+    /* border: 1px solid red; */
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  #small > img {
+    width: 15px;
+  }
+  #small > img + p {
+    margin-top: -20px;
+    margin-left: 10px;
+    /* color: chocolate; */
+    color: #333;
+  }
+  #small > img + p + p {
+    margin-top: -25px;
+    margin-left: 25px;
+
+    color: #2f9bdb;
+  }
+  #small > img + p + p + p {
+    margin-top: -26px;
+    margin-left: 105px;
+
+    color: #333;
+  }
+  #small > img + p + p + p + p {
+    margin-top: -26px;
+    margin-left: 125px;
+
+    color: #333;
+  }
+  #small + h1,
+  #small + h1 + p {
+    margin-left: 60px;
+  }
+  #Tripoto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 650px);
+    /* gap: 10px; */
+    width: 80%;
+    margin-left: 20px;
+    /* font-family: HelveticaNeue",Helvetica,Arial,sans-serif; */
+    font-family: -apple-system, helvetica, arial, sans-serif;
+  }
+
+  #Tripoto > div {
+    border-bottom: 2px solid #ddd;
+   
+    cursor: pointer;
+    margin-left: 40px;
+    width: 300px;
+    height:500px;
+    font-size: 13px;
+    /* margin-bottom: 100px; */
+  }
+  #Tripoto > div:nth-child(11) {
+    height: 520px;
+  }
+
+  #Tripoto > div > img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  #Tripoto > div > img + h4 {
+    text-transform: uppercase;
+    color: #359391;
+    font-size: 15px;
+  }
+
+  #Tripoto > div > img:nth-child(4) {
+    width: 3%;
+  }
+
+  #Tripoto > div > h4:nth-child(5) {
+    margin-top: -20px;
+    margin-left: 30px;
+    font-size: 15px;
+    color: #359391;
+  }
+
+  #Tripoto > div > p:nth-child(7) {
+    margin-top: -34px;
+    margin-left: 65px;
+    font-size: 15px;
+    color: #359391;
+  }
+
+  #Tripoto > div > button:nth-child(9) {
+    margin-left: 10px;
+    height: 300px;
+  }
+
+  #Tripoto > div > button:nth-child(8) {
+  
+
+    margin-left: 200px;
+    margin-bottom: 300px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    border: 1px solid #359391;
+    background-color: #fff;
+    color: #359391;
+    border-radius: 5px;
+  }
+  #Tripoto+h1,#Tripoto+h1+h3,#Tripoto+h1+h3+p{
+    margin-left: 70px;
+    font-size: 13px;
   }
 }

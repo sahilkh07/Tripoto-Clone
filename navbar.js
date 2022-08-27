@@ -3,12 +3,13 @@
 function navbar(){
     return `<div id="navbar">
     <div>
-        <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" alt="">
+        
+        <a href="/mainpage/index.html"  id="linkpage"><img src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" alt=""></a>
       
     
     </div>
     <div>
-        <h3>Inspirations</h3>
+        <h3 onmouseover="showfunc()">Inspirations</h3>
     </div>
     <div>
         <h3>forum</h3>
