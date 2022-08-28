@@ -93,6 +93,9 @@ body {
   margin: auto;
   /* font-family: HelveticaNeue",Helvetica,Arial,sans-serif; */
   font-family: -apple-system, helvetica, arial, sans-serif;
+  
+    
+
 
 }
 
@@ -185,7 +188,7 @@ body {
 }
 
 
-@media screen and (min-width: 427px) and (max-width: 1000px) {
+@media screen and (min-width: 427px) and (max-width: 800px) {
   #main {
     width: 101vw;
     top: 0;
@@ -231,7 +234,8 @@ body {
   }
   #navbar{
     width: 100%;
-    padding-left: 10px;
+    padding-left: 100px;
+    border: 1px solid red;
     
   }
   nav.scrolled {
@@ -257,11 +261,11 @@ body {
   color: white;
   margin-right: 100px;
 }
-
+/* 
   #logotripoto{
     width: 100px;
     margin-top: 7px;
-  }
+  } */
    
 
   #main > h1 {
@@ -435,9 +439,45 @@ visibility: hidden;
     box-sizing: border-box;
     
   }
+    #navbar{
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 0; 
+    height: 50px;
+    z-index: 1000;
+  }
+  #navbar{
+    width: 100%;
+    padding-left: 10px;
+    
+  }
+  nav.scrolled {
+    transition: all 2s;
+    background-color: #2f9bdb;
+  }
+  #rightNavbar>a>img{
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+   
+  }
+
+.corner{
+  margin-top: 20px;
+  position: absolute;
+  /* left: 2%; */
+  height: 15px;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 20px;
+  border: none; 
+  color: white;
+  margin-right: 100px;
+  border: 1px solid red;
+}
  
 
-  #navbar {
+  /* #navbar {
     color: #fff;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -447,17 +487,17 @@ visibility: hidden;
     width: 54%;
    
     /* background-color: #2f9bdb; */
-    padding-left: 20px;
+    /* padding-left: 20px;
     padding-right: 20px;
     font-size: 10px;
     height: 48px;
-    top: 0px;
+    top: 0px; */
   
-  }
+  } */
 
-  #navbar > div:nth-child(1) {
+  /* #navbar > div:nth-child(1) {
     margin-right: 50px;
-  }
+  } */
   #logotripoto{
     width: 100px;
     margin-top: 7px;
