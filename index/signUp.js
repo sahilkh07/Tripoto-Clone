@@ -103,7 +103,7 @@ function display(Login){
     label.append(ul)
     ul.append(div)
     btn.append(label)
-    document.getElementById("corner").style.left = "55%"
+    document.getElementById("corner").style.left = "50%"
 
     document.getElementById("corner").append(btn)
 }

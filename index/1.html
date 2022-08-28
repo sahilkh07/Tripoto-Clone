@@ -22,10 +22,10 @@
               <li class="ins">Inspiration
                 <ul>
                   <div id="margin">
-                    <li>Visit Dubai</li>
+                    <li><a href="/vistDubai/visitDubai.html">Visit Dubai</a></li>
                     <li>Visit Singapore</li>
                     <li>Beaches</li>
-                    <li>Mountains</li>
+                    <li><a href="/inspiration/mountain.html">Mountains</a></li>
                     <li>Heritage</li>
                     <li>Weekend Guide</li>
                     <li>Upcoming Festivals</li>
@@ -33,7 +33,7 @@
                     <li>Wildlife Tourism</li>
                     <li>Road Trips</li>
                     <li>Getaways Guide</li>
-                    <li>Luxury Travel</li>
+                    <li><a href="/inspiration/Luxurious.html"> Travel</a></li>
                     <li>Explore More</li>
                   </div>
                 </ul>
@@ -43,7 +43,7 @@
               <li class="ins">Forum</li>
             </button>
             <button>
-              <li class="ins">Packages</li>
+             <li class="ins"> <a href="/Package/package.htm">Packages</a></li>
             </button>
             <button>
               <li class="ins">Publish Trip
@@ -470,8 +470,15 @@
   <button class="newBtn" id="left3"><</button>
   <button class="newBtn" id="right3">></button>
   </div>
+
+  <div id="footer"></div>
 </body>
 </html>
 
 <script src="signUp.js"></script>
 <script src="Sliding.js"></script>
+<script type="module">
+  import footer from "/package_content/footer.js"
+  document.getElementById("footer").innerHTML=footer()
+</script>
+<link rel="stylesheet" href="/package_content/footer.css">

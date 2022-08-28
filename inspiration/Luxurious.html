@@ -73,7 +73,7 @@
 <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/1/Image/1519647598_homepage41.jpg" alt=""><h3>Super Luxurious Cruise From Mumbai To Bangkok</h3></div>
 
 </div>
-<div id="foot"></div>
+<div id="footer"></div>
 </body>
 </html>
 <script type="text/javascript">
@@ -86,12 +86,9 @@
 
 </script>
  
- <script type="module">
-    import footer from "./components/footer.js";
-
-    console.log(footer)
-    let foot=document.getElementById("foot");
-    foot.innerHTML=footer();
-    
-    
-    </script>
+<script type="module">
+    import footer from "/package_content/footer.js"
+    document.getElementById("footer").innerHTML=footer()
+  </script>
+  <link rel="stylesheet" href="/package_content/footer.css">
+  

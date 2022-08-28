@@ -1,6 +1,6 @@
 function footer(){
     return`
-    <div id="container">
+    <div id="contr">
     <div>
     <img id="img" src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="">
     <p><u>India's Largest Travel Community</u>s</p>
@@ -43,7 +43,7 @@ function footer(){
     <p>Sri Lanka Tourism</p>
     <p>Honeymoon Destinations In India</p>
     </div>
-    <div id="partner" >
+    <div id="Partner" >
         <p class="top">Partner Programs</p>
     <p>Buy Travel Leads</p>
     <p>Partner With Us</p>

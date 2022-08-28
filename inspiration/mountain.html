@@ -12,6 +12,7 @@
     
 </style>
 <body>
+    <div id="navbar"></div>
     <div id="full">
 
         <h1 class="font-circular color-dark font-36 font-28-xs">Hill Stations</h1>
@@ -77,18 +78,16 @@
 <div><img src="https://cdn1.tripoto.com/media/filter/tst/gen/1/Image/1545313945_16470508_1216857028400680_3967022933515173888_n.jpg" alt=""><h3>Gorgeous Winter Wonderlands In India</h3><p>By Tripoto</p></div>
 
 </div></div>
-    <div id="foot">111</div>
+    <div id="footer"></div>
+    <div id="navbar"></div>
 </body>
 </html>
 
-<script type="module">
-      let foot=document.getElementById("foot");
-    import footer from "./components/footer.js";
-    foot.innerHTML = footer();
-    console.log(footer)
 
-  
+    <script type="module">
+        import footer from "/package_content/footer.js"
+        document.getElementById("footer").innerHTML=footer()
+      </script>
+      <link rel="stylesheet" href="/package_content/footer.css">
+      
 
-    
-    </script>
-    

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#container{
+#contr{
     width: 100%;
     height: 300px;
     border-bottom:1px solid #ddd ;
@@ -39,7 +39,7 @@
     font-size: small;
     color: rgb(58, 55, 55);
     cursor: pointer;
-}#partner>p{
+}#Partner>p{
     font-size: small;
     color: rgb(58, 55, 55);
     cursor: pointer;
@@ -103,4 +103,7 @@ margin-left: 43%;
 }#down>div>img{
     width: 90%;
     height: 300px;
+}
+body{
+    line-height: 1.7;
 }
