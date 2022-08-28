@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+font-family: 'circularairpro-bold', Helvetica, Arial, sans-serif;
+}
+
+/* -----------------------Navbar----------------------------- */
+#navbar{
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 0; 
+  height: 50px;
+  z-index: 1000;
+}
+#navbar{
+  width: 100%;
+  padding-left: 10px;
+}
+nav.scrolled {
+  transition: all 1s;
+  background-color: #2f9bdb;
+}
+#main{
+    height: 400px;
+    background-image: url("https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg");
+}
+  #smallDiv{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px; 
+  }
+  .parts>img{
+    width: 100%;
+    height: 70px;
+  }
+  #newNew{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+  }
+  #new{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    margin: auto;
+    /* margin-top: 20px; */
+  }
+  #new>div,#august>div,#august1>div,#august2>div,#august3>div{
+    padding: 0px 0px 0px 20px;
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+  }
+  #august,#august1,#august2,#august3{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    /* margin-top: 20px; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+
+  }
+  .newBtn{
+    height: 40px;
+    width: 40px;
+    color:#359391;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 30%;
+  }
+  /* .newBtn1{
+    height: 40px;
+    width: 40px;
+    color:#359391;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 200%;
+  } */
+
+#new img,#august img,#august1 img,#august2 img,#august3 img{
+    border-radius: 5px;
+    width: 230px;
+    height: 160px;
+}
+#left,#left1,#left2,#left3{
+    left: 0%;
+}
+#right,#right1,#right2,#right3{
+    right: 2.5%;
+}
+#mid{
+    display: flex;
+    justify-content: center;
+}
+#mid>img{
+    width: 92%;
+}
+.trending{
+display: flex;
+margin: auto;
+justify-content: center;
+gap: 20px;
+}
+.card>img{
+width: 100%;
+height:180px;
+border-radius: 3%;
+}
+.card{
+width: 30%;
+}
+.card p{
+color: #359391;
+font-weight: bold;
+font-size: small;
+margin-bottom: 10px;
+}
+.flex{
+display:flex;
+justify-content: space-between;
+margin-bottom: 2%;
+width: 100%;
+}
+.book{
+width: 100%;
+max-width: fit-content;
+}
+hr{
+width: 100%;
+}
+.green{
+color: #359391;
+margin-left: 5px;
+font-size: small;
+font-weight: bold;
+
+}
+.grey{
+color: gray;
+margin-right: 140px;
+}
+.getQ{
+padding: 2%;
+border: 1px solid green;
+background: white;
+color: #359391;
+border-radius: 5px;
+font-weight: 600;
+}
+.day{
+background-color: #359391;
+border-radius: 5px;
+
+color: white;
+border-radius: 20%;
+border: 0px;
+font-size: smaller;
+padding:7px 2px;
+}
+.partnersfor{
+display: flex;
+
+align-items: center;
+}
+.partnersfor>img {
+width: 8%;
+border-radius: 50px;
+}
+
+.partnersfor>img+p {
+margin-bottom: -7px;
+
+}
+#spotlight{
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+.pics>img{
+width: 380px;
+height: 500px;
+}
+#plan{
+display: flex;
+justify-content: center;
+gap:20px
+}
+.next>img{
+width: 280px;
+height: 300px;
+}
+.heading{
+font-size: 30px;
+margin-left: 40px;
+font-weight: 550;
+margin-bottom: 12px;
+margin-top: 30px;
+}
+.orange{
+color: orangered;
+font-weight: bold;
+font-size: 12px;
+margin-bottom: 10px;
+
+}
+.blue{
+line-height: 1.4;
+margin-bottom: 30px;
+color: skyblue;
+
+}
+.sizeable{
+font-size: 14px;
+}
+.title2,.title,.title3,.title4,.titleLast{
+line-height: 1.4;
+margin-bottom: 10px;
+}
+
+#searchBar{
+  /* text-align: center; */
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+  width: 85%;
+  height: 45px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+#head-search{
+  padding-top: 12%;
+  /* border: 1px solid black; */
+  width: 50%;
+  margin: auto;
+  height: auto;
+}
+button{
+  /* position: relative; */
+  /* border: 1px solid black; */
+  list-style-type: none;
+}
+ul{
+  display: none;
+}
+.corner>button li:hover ul{
+  text-align: left;
+  /* border: 1px solid black; */
+  display: contents;
+}
+.corner>button li ul li{
+  padding: 10px 0px 10px 10px;
+  background-color: white;
+  color: black;
+}
+li{
+  list-style-type: none;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  /* background-color: white; */
+}
+.corner>button li ul{
+  margin-top: 20px;
+}
+#Amount{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 50;
+  height: 200px;
+  width: 400px;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 50px;
+}
+#Amount input{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   height: 30px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   outline: none;
+   border: 1px solid rgb(192, 190, 190);
+}
+#Amount button{
+  padding: 5px 0px;
+  border: 1px solid rgb(192, 190, 190);
+
+}
+#Amount button:hover{
+  padding: 5px 0px;
+  /* border: 1px solid rgb(192, 190, 190); */
+  background-color: #359391;
+  color: white;
+  border-radius: 10px;
+}
+
+#margin{
+  font-size: 12px;
+  margin-top: 20px;
+  width: 150px;
+  position: relative;
+  right: 25%;
+}
+
+.corner{
+  margin-top: 10px;
+  position: absolute;
+  left: 62%;
+  height: 15px;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.title,.title2,.title3,.title4,.titleLast{
+  font-size: 16px;
+  color: #333333;
+  width: 80%;
+}
+.ins{
+  /* border: 1px solid black; */
+}
+
+#coin{
+  width: 15px;
+  margin: auto;
+}
