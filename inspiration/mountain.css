@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+
+    #parent{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    #parent>div>img{
+        width: 90%;
+        height: 200px;
+        border-radius: 6px;
+        text-align: center;
+    }#full{
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    #crouser{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 95%;
+        height: 400px;
+        gap: 25px;
+        margin: auto;
+        /* position: relative; */
+    
+    }
+    #crouser>div>img{
+        width: 100%;
+        height: 240px;
+        border-radius: 5px;
+    }.btn{
+        height: 20px;
+        position: absolute;
+        color: red;
+        margin-top: 10%;
+        width: 35px;
+        
+    }.btn1{
+        height: 20px;
+        position: absolute;
+        color: red;
+        margin-top: 10%;
+        margin-left: 98%;
+        width: 35px;
+    }h5{
+        color: rgb(243, 96, 11);
+        
+    }
+    #crous{
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 95%;
+        height: 350px;
+        gap: 25px;
+        margin: auto;
+        /* position: relative; */
+        }
+    #crous>div>img{
+        width: 100%;
+        height: 240px;
+        border-radius: 5px;
+    }
+    #Book{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        width: 90%;
+        margin: auto;
+    }
+    #Book>div>img{
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+    }h6{
+        font-size:large;
+        color: rgb(7, 136, 134);
+    }button{
+        color: rgb(7, 136, 134);
+        border-color: rgb(7, 136, 134);
+        height: 30px;
+        width: 100px;
+        border-radius: 6px;
+    } 
+    #fl{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         gap: 20px;
+         margin: auto;
+         
+         width: 90%;
+    }#fl>div>img{
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+      
+    }
+    #video{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+        gap: 15px;
+        margin: auto;
+    }#video>div>img{
+
+width: 100%;
+height: 225px;
+border-radius: 5px;
+    }
+    
+@media all and (min-width:480px) and (max-width:768px){
+
+#parent{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(5,1fr);
+gap: 15px;
+width: 90%;
+margin: auto;
+height: auto;
+text-align: center;
+}
+}
+@media all and (min-width:100px) and (max-width:479px){
+
+#parent{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(1,1fr);
+gap: 15px;
+width: 90%;
+margin: auto;
+height: auto;
+text-align: center;
+}
+
+}
+
+@media all and (min-width:480px) and (max-width:768px){
+    #crous{
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 95%;
+        height: 350px;
+        gap: 25px;
+        margin: auto;
+        /* position: relative; */
+        }
+}
+@media all and (min-width:100px) and (max-width:479px){
+    #crous{
+        
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 95%;
+        height: 350px;
+        gap: 25px;
+        margin: auto;
+        /* position: relative; */
+        }
+}
+@media all and (min-width:480px) and (max-width:768px){
+
+    #Book{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        width: 90%;
+        margin: auto;   
+    }
+}
+@media all and (min-width:480px) and (max-width:768px){
+
+#Book{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+}
+@media all and (min-width:480px) and (max-width:768px){
+
+    #crouser{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 95%;
+        height: 400px;
+        gap: 25px;
+        margin: auto;
+    }
+}
+@media all and (min-width:100px) and (max-width:479px){
+#crouser{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 95%;
+        height: 400px;
+        gap: 25px;
+        margin: auto;
+    }}
+@media all and (min-width:480px) and (max-width:768px){
+    #fl{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         gap: 20px;
+         margin: auto;
+         
+         width: 90%;
+}
+}
+@media all and (min-width:100px) and (max-width:479px){
+    #fl{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         gap: 20px;
+         margin: auto;
+         
+         width: 90%;
+}}
+@media all and (min-width:480px) and (max-width:768px){
+    #video{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        gap: 15px;
+        margin: auto;
+}
+}
+@media all and (min-width:100px) and (max-width:479px){
+    #video{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+        gap: 15px;
+        margin: auto;
+    }
+}
