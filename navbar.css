@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+#navbar{
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 0; 
+    height: 50px;
+    z-index: 100;
+  }
+#navbar{
+    width: 100%;
+    padding-left: 10px;
+  }
+nav.scrolled {
+    transition: all 1s;
+    background-color: black;
+  }
+  button{
+    /* position: relative; */
+    /* border: 1px solid black; */
+    list-style-type: none;
+  }
+  ul{
+    display: none;
+  }
+  .corner>button li:hover ul{
+    text-align: left;
+    /* border: 1px solid black; */
+    display: contents;
+  }
+  .corner>button li ul li{
+    padding: 10px 0px 10px 10px;
+    background-color: white;
+    color: black;
+  }
+  li{
+    list-style-type: none;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* background-color: white; */
+  }
+  .corner>button li ul{
+    margin-top: 20px;
+  }
+  /* #Amount{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 50;
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 50px;
+  } */
+  /* #Amount input{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     height: 30px;
+     padding: 5px 10px;
+     border-radius: 5px;
+     outline: none;
+     border: 1px solid rgb(192, 190, 190);
+  } */
+  /* #Amount button{
+    padding: 5px 0px;
+    border: 1px solid rgb(192, 190, 190);
+  
+  } */
+  /* #Amount button:hover{
+    padding: 5px 0px;
+    background-color: #359391;
+    color: white;
+    border-radius: 10px;
+  } */
+  
+  #margin{
+    font-size: 12px;
+    margin-top: 20px;
+    width: 150px;
+    position: relative;
+    right: 25%;
+  }
+  
+  .corner{
+    margin-top: 10px;
+    position: absolute;
+    left: 62%;
+    height: 15px;
+    /* border: 1px solid black; */
+    display: flex;
+  }
+
+  
+  #coin{
+    width: 15px;
+    margin: auto;
+  }
+  body{
+    height: 1000px;
+    background-color: yellowgreen;
+  }
+
+.corner{
+    position: absolute;
+    top: 5px;
+}
+.corner button{
+    /* padding: 10px 20px; */
+    width: 100px;
+    font-size: 14px;
+    /* font-weight: 600; */
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
