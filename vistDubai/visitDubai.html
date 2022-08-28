@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="visitDubai.css">
+    <link rel="stylesheet" href="/footer.css">
 </head>
 
 <body>
@@ -374,6 +375,7 @@
             </div>
             </div>
     </div>
+    <div id="footerDiv"></div>
     
 </body>
 
@@ -391,3 +393,8 @@
     }
 </script>
 <script src="/vistDubai/visitDubai.js"></script>
+<script type="module">
+    import footer from "/footer.js"
+    console.log(footer)
+    document.getElementById("footerDiv").innerHTML=footer()
+</script>
