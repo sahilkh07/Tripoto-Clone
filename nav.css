@@ -19,14 +19,16 @@
 #navbar{
   width: 100%;
   padding-left: 10px;
+  
 }
 nav.scrolled {
-  transition: all 1s;
+  transition: all 2s;
   background-color: #2f9bdb;
 }
 #mains{
     height: 400px;
     background-image: url("https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg");
+    
 }
   #smallDiv{
     display: flex;
@@ -326,6 +328,7 @@ li{
   width: 150px;
   position: relative;
   right: 25%;
+  
 }
 
 .corner{
@@ -333,10 +336,11 @@ li{
   position: absolute;
   left: 62%;
   height: 15px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   gap: 40px;
-  border: none;
+  border: none; 
+  color: white;
 }
 
 .title,.title2,.title3,.title4,.titleLast{
@@ -344,9 +348,9 @@ li{
   color: #333333;
   width: 80%;
 }
-.ins{
+/* .ins{
   /* border: 1px solid black; */
-}
+} */
 
 #coin{
   width: 15px;
@@ -355,6 +359,9 @@ li{
 button{
     border: none;
     color: #ffffff;
-   ;
+    background-color: transparent;
+    
+   
+   
 
 }
