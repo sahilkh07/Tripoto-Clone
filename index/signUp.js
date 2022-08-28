@@ -70,7 +70,7 @@ for(let i=0; i<loginData.length; i++){
 
     if(flag==true){
         alert("Login Successful");
-        window.location.href = "1.html"
+     return   window.location.href = "1.html"
         
     }else{
         alert("Wrong Credentails")
