@@ -8,6 +8,7 @@
     <title>Mindful</title>
     <link rel="stylesheet" href="mindful.css">
     <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/nav.css">
 </head>
 
 <body>
@@ -16,7 +17,55 @@
 
     
         <div id="main">
-            <div id="mainn"></div>
+            <nav id="navbar">
+                <div id="rightNavbar">
+                  <a href="1.html"><img src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" alt=""></a>
+                </div>
+                <div id="corner" class="corner">
+                    <button>
+                      <li class="ins">Inspiration
+                        <ul>
+                          <div id="margin">
+                            <li>Visit Dubai</li>
+                            <li>Visit Singapore</li>
+                            <li>Beaches</li>
+                            <li>Mountains</li>
+                            <li>Heritage</li>
+                            <li>Weekend Guide</li>
+                            <li>Upcoming Festivals</li>
+                            <li>Honeymoon Packages</li>
+                            <li>Wildlife Tourism</li>
+                            <li>Road Trips</li>
+                            <li>Getaways Guide</li>
+                            <li>Luxury Travel</li>
+                            <li>Explore More</li>
+                          </div>
+                        </ul>
+                      </li>
+                    </button>
+                    <button>
+                      <li class="ins">Forum</li>
+                    </button>
+                    <button>
+                      <li class="ins">Packages</li>
+                    </button>
+                    <button>
+                      <li class="ins">Publish Trip
+                        <ul>
+                          <div id="margin">
+                            <li id="addAmount">Add Amount</li>
+                            <li>Create New</li>
+                            <li>Upload Photos/Videos</li>
+                            <li>Import Blog</li>
+                          </div>
+                        </ul>
+                      </li>
+                    </button>
+                    <button class="logOut" id="show-login">
+                      <li class="ins">Sign In</li>
+                    </button>
+                </div>
+              </nav>
 
         </div>
         <div id="small">
@@ -221,13 +270,13 @@
     </body>
 
 </html>
-<script type="module">
+<!-- <script type="module">
     import navbar from "/navbar.js"
     console.log(navbar)
     document.getElementById("mainn").innerHTML = navbar()
     
 
-</script>
+</script> -->
 <script type="module">
     import footer from "/footer.js"
     console.log(footer)
